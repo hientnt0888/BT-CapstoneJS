@@ -1,11 +1,16 @@
 header {
-    border: solid 0.5px $color-white1;
     border-top: none;
-    box-shadow: 10px 0px 10px 10px rgba(0, 0, 0, 0.1);
-    .container {
-        padding: $fs-1 0;
-    }
+    background-color: $color-white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     .navbar {
+        padding: 0;
+        .nav__logo img {
+            height: 100px;
+        }
         button {
             background-color: $color-black;
         }
@@ -14,7 +19,7 @@ header {
             margin-left: $mg-5;
         }
         ul li .nav-link {
-            @include styleText($color-black, $fs-2, $fw-1);
+            @include styleText($color-black, $fs-2, $fw-2);
             margin-left: $mg-1;
         }
     }
