@@ -1,0 +1,21 @@
+header {
+    border: solid 0.5px $color-white1;
+    border-top: none;
+    box-shadow: 10px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    .container {
+        padding: $fs-1 0;
+    }
+    .navbar {
+        button {
+            background-color: $color-black;
+        }
+        .collapse {
+            justify-content: space-between;
+            margin-left: $mg-5;
+        }
+        ul li .nav-link {
+            @include styleText($color-black, $fs-2, $fw-1);
+            margin-left: $mg-1;
+        }
+    }
+}
