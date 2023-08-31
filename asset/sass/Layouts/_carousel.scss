@@ -1,0 +1,74 @@
+.carousel {
+    position: relative;
+    .carousel__img {
+        background-image: url(../img/76b189c0084e43a930de502446b78359.jpg);
+        height: 750px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        filter: grayscale(100%);
+    }
+    .carousel__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .carousel__text {
+                width: 50%;
+                P:first-of-type {
+                    @include styleText($color-white1, $fs-2, $fw-1);
+                }
+                h2:nth-of-type(1) {
+                    @include styleText($color-black, $fs-3, $fw-3);
+                }
+                p:nth-of-type(2) {
+                    @include styleText($color-black, $fs-1, $fw-2);
+                    padding: $pd-2 0;
+                }
+                .carousel__btn {
+                    @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
+                    @include styleText($color-white, $fs-1, $fw-1);
+                }
+            }
+            .carousel__item {
+                width: 50%;
+                transform: translate(60px, -80px);
+
+                .carousel__imgshoe {
+                    img {
+                        position: relative;
+                        z-index: 10;
+                    }
+                    .carousel__air {
+                        @include styleText($color-yellow1, $fs-8 + 20, $fw-4);
+                        font-style: italic;
+                        position: absolute;
+                        top: 109px;
+                        left: 35px;
+                        z-index: 11;
+                    }
+                    .carousel__textstyle {
+                        position: absolute;
+                        top: 283px;
+                        left: 35px;
+                        text-align: right;
+                        z-index: 1;
+                        .carousel__jordan {
+                            @include styleText($color-black, $fs-8 + 17, $fw-4);
+                            font-style: italic;
+                        }
+                        .carousel__ring {
+                            @include styleText($color-yellow1, $fs-3, $fw-4);
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
