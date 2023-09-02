@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container__body">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg nav">
+                    <a class="navbar-brand nav__logo" href="#"> <img src="../asset/img/images-removebg-preview.png"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">MAN <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WOMAN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">KIDS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">COLLECTIONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SEARCH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" data-target="#myModal" href="#">MY CART
+                                    (<span></span>)</a>
+
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    
+            
+    </header>
+
+    <div class="container__body">
+        <div class="carousel py-4">
+            
+                <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+    
+                <h1 class="text-center py-4">My cart</h1>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Img</th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                           
+                        </table>
+
+                        <button class="carousel__btn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp;SUBMIT ORDER</button>
+                        <!-- <a href="#" class="btn btn-primary btn-md create__btn">
+                            <i
+                                class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                &nbsp;SUBMIT ORDER</a> -->
+                    </div>
+                </div>
+           
+           
+               
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__content">
+                <div class="col-3"><div class="footer__logo">
+                    <img src="../asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
+                </div></div>
+                <div class="col-2">
+                    <ul class="navbar-nav">
+                        <li>
+                            <h3>Info</h3>
+                        </li>
+                        <li><a href="#">Find a store</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Gift</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Become a member</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="navbar-nav">
+                        <li>
+                            <h3>Shop</h3>
+                        </li>
+                        <li><a href="#">Man</a></li>
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="navbar-nav">
+                        <li>
+                            <h3>About</h3>
+                        </li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="footer__icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>2023 .Sport <br>All rights reserved</p>
+                <p>Privace & Cookie Policy</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+        
+            
+           
+ 
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script> -->
+
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+        <script src="./controller/main.js"></script>
+ 
+        
+
+
+
+
+</body>
+
+</html>
