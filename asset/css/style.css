@@ -315,15 +315,15 @@ footer {
   padding: 80px 0 50px;
 }
 
-.footer__content .col-2 ul li {
+.footer__content .col-3 .col-2 ul li {
   padding-bottom: 5px;
 }
-.footer__content .col-2 ul li a {
+.footer__content .col-3 .col-2 ul li a {
   color: #8c8585;
   font-size: 18px;
   font-weight: 400;
 }
-.footer__content .col-2 ul li h3 {
+.footer__content .col-3 .col-2 ul li h3 {
   padding-bottom: 10px;
   color: white;
 }
@@ -350,7 +350,3 @@ footer {
   font-size: 18px;
   font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
-
-.modal-backdrop {
-  z-index: 1;
-}
