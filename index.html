@@ -68,33 +68,34 @@
         <!-- modal sign in  -->
         <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Sign in to your account</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="email" class="col-form-label">Email</label>
-                      <input type="email" class="form-control" id="email">
-                      <span id="tbEmail"></span>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign in to your account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="form-group">
-                        <label for="password" class="col-form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
-                        <span id="tbPassword"></span>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                                <span id="tbEmail"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                                <span id="tbPassword"></span>
+                            </div>
+                        </form>
                     </div>
-                  </form>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <p>Don’t have an account yet? <a href="" data-toggle="modal" data-target="#signUp">Sign up</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                  <p>Don’t have an account yet? <a href=""data-toggle="modal" data-target="#signUp">Sign up</a></p>
-                </div>
-              </div>
             </div>
         </div>
 
@@ -102,54 +103,54 @@
         <!-- modal sign up -->
         <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Sign up to your account</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign up to your account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                                <span id="tbEmail"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="col-form-label">Name</label>
+                                <input type="text" class="form-control" id="name">
+                                <span id="tbName"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-form-label">Phone</label>
+                                <input type="number" class="form-control" id="phone">
+                                <span id="tbPhone"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                                <span id="tbPassword"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm" class="col-form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm">
+                                <span id="tbConfirm"></span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                          <label for="email" class="col-form-label">Email</label>
-                          <input type="email" class="form-control" id="email">
-                          <span id="tbEmail"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="name" class="col-form-label">Name</label>
-                            <input type="text" class="form-control" id="name">
-                            <span id="tbName"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="col-form-label">Phone</label>
-                            <input type="number" class="form-control" id="phone">
-                            <span id="tbPhone"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" id="password">
-                            <span id="tbPassword"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm" class="col-form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm">
-                            <span id="tbConfirm"></span>
-                        </div>
-                      </form>
-                </div>
-                <div class="modal-footer">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                  <button type="submit" class="btn btn-primary">Sign up</button>
-                </div>
-              </div>
             </div>
         </div>
 
 
         <!--  -->
-    
-            
+
+
     </header>
     <div class="container__body">
         <section class="carousel">
@@ -180,7 +181,36 @@
             </div>
             <div class="carousel__line"></div>
         </section>
-        <section class="products"></section>
+        <section class="products">
+            <div class="container">
+                <h2 class="products__h2">Top Picks</h2>
+                <div class="products__item">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="products__img">
+                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
+                            </div>
+                            <h3>Kyrie 5 x Friends</h3>
+                            <p>price</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="products__img">
+                                  <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
+                            </div>
+                            <h3>Kyrie 5 x Friends</h3>
+                            <p>price</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="products__img">
+                                  <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
+                            </div>
+                            <h3>Kyrie 5 x Friends</h3>
+                            <p>price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="trending">
             <div class="container">
                 <h2 class="trending__h2">Trending Now</h2>
@@ -237,9 +267,11 @@
         <footer>
             <div class="container">
                 <div class="row footer__content">
-                    <div class="col-3"><div class="footer__logo">
-                        <img src="./asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
-                    </div></div>
+                    <div class="col-3">
+                        <div class="footer__logo">
+                            <img src="./asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
+                        </div>
+                    </div>
                     <div class="col-2">
                         <ul class="navbar-nav">
                             <li>
@@ -303,7 +335,7 @@
         crossorigin="anonymous"></script> -->
 
 
-        
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -313,9 +345,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-        <script src="./controller/main.js"></script>
- 
-        
+    <script src="./controller/main.js"></script>
+
+
 
 
 

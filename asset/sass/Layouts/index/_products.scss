@@ -1,0 +1,26 @@
+.products{
+    padding: 60px 0;
+    .container{
+        .products__h2{
+            @include styleText($color-black, $fs-3, $fw-3);
+            padding: 40px 0;
+        }
+    }
+}
+.products__item{
+    .row{
+        .col-4{
+            .products__img{
+                background-color: $color-white2;
+                padding: 70px 50px 30px;
+                img{
+                    width: 100%;
+                }
+            }
+            h3{
+                @include styleText($color-black,$fs-2 + 10,$fw-2);
+                padding-top: 30px;
+            }
+        }
+    }
+}
