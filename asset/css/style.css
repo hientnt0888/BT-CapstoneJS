@@ -36,6 +36,63 @@ body, html {
   font-weight: 400;
 }
 
+.slick-next {
+  top: -40px;
+  right: 45px;
+}
+
+.slick-prev {
+  top: -40px;
+  right: 100px;
+  left: unset;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  background-color: #8c8585;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+  top: 50px;
+}
+
+.carousel__btn {
+  background: black;
+  padding: 10px 20px;
+  border-radius: none;
+  border: none;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.trending__btn {
+  background: black;
+  padding: 10px 20px;
+  border-radius: none;
+  border: none;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border: solid 1px white;
+}
+
+.create__btn {
+  background: black;
+  padding: 10px 20px;
+  border-radius: none;
+  border: none;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 header {
   border-top: none;
   background-color: white;
@@ -119,16 +176,6 @@ header .navbar ul li .nav-link {
   font-weight: 600;
   padding: 25px 0;
 }
-.carousel .carousel__content .container .carousel__text .carousel__btn {
-  background: black;
-  padding: 10px 20px;
-  border-radius: none;
-  border: none;
-  letter-spacing: 0.015rem;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-}
 .carousel .carousel__content .container .carousel__item {
   width: 50%;
   transform: translate(60px, -80px);
@@ -167,7 +214,7 @@ header .navbar ul li .nav-link {
   font-style: italic;
 }
 .carousel .carousel__line {
-  height: 140px;
+  height: 180px;
   width: 1500px;
   background: rgb(255, 187, 0);
   background: linear-gradient(90deg, rgba(255, 187, 0, 0.751) 53%, rgba(230, 230, 230, 0.51) 53%);
@@ -184,7 +231,7 @@ header .navbar ul li .nav-link {
 .products .container .products__h2 {
   color: black;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 40px 0;
 }
 
@@ -205,7 +252,7 @@ header .navbar ul li .nav-link {
 .trending .container .trending__h2 {
   color: black;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 40px 0;
 }
 .trending .container .row {
@@ -269,17 +316,6 @@ header .navbar ul li .nav-link {
   font-weight: 600;
   padding: 25px 0;
 }
-.trending__right .trending__longimg .trending__text .trending__btn {
-  background: black;
-  padding: 10px 20px;
-  border-radius: none;
-  border: none;
-  letter-spacing: 0.015rem;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  border: solid 1px white;
-}
 .trending__right .trending__longimg .overlay {
   background-color: rgba(16, 13, 13, 0.5);
   width: 100%;
@@ -316,16 +352,6 @@ header .navbar ul li .nav-link {
   font-size: 18px;
   font-weight: 600;
   padding: 25px 0;
-}
-.create .container .create__text .create__btn {
-  background: black;
-  padding: 10px 20px;
-  border-radius: none;
-  border: none;
-  letter-spacing: 0.015rem;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
 }
 .create .container .create__imgshoe {
   width: 65%;

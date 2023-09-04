@@ -1,4 +1,40 @@
-.cart__btn{
+.cart__btn {
+    @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
+    @include styleText($color-white, $fs-1, $fw-1);
+}
+
+//btn products
+.slick-next{
+    top: -40px;
+    right: 45px;
+}
+.slick-prev{
+    top: -40px;
+    right: 100px;
+    left: unset;
+}
+.slick-prev::before,
+.slick-next::before {
+    background-color: $color-black1;
+    padding: 10px;
+    font-size: 30px;
+}
+.slick-dots li button:before{
+    font-size: 15px;
+    top: 50px;
+}
+
+.carousel__btn {
+    @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
+    @include styleText($color-white, $fs-1, $fw-1);
+}
+
+.trending__btn {
+    @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
+    @include styleText($color-white, $fs-1, $fw-1);
+    border: solid 1px white;
+}
+.create__btn {
     @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
     @include styleText($color-white, $fs-1, $fw-1);
 }

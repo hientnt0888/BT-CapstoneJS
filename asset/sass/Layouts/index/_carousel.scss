@@ -42,10 +42,6 @@
                     @include styleText($color-black, $fs-1, $fw-2);
                     padding: $pd-2 0;
                 }
-                .carousel__btn {
-                    @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
-                    @include styleText($color-white, $fs-1, $fw-1);
-                }
             }
             .carousel__item {
                 width: 50%;
@@ -83,8 +79,8 @@
             }
         }
     }
-    .carousel__line{
-        height: 140px;
+    .carousel__line {
+        height: 180px;
         width: 1500px;
         background: rgb(255, 187, 0);
         background: linear-gradient(90deg, rgba(255, 187, 0, 0.751) 53%, rgba(230, 230, 230, 0.51) 53%);
