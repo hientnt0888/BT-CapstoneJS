@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -97,17 +102,19 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                  <p>Don’t have an account yet? <a id="signUp_next" href=""data-toggle="modal" data-target="#signUp">Sign up</a></p>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <p>Don’t have an account yet? <a id="signUp_next" href="" data-toggle="modal"
+                            data-target="#signUp">Sign up</a></p>
                 </div>
-              </div>
             </div>
+        </div>
         </div>
 
 
         <!-- modal sign up -->
-        <div class="modal fade modal-second" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade modal-second" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -158,8 +165,8 @@
                                     <label for="email" class="col-form-label">Email</label>
                                     <input type="email" class="form-control" id="email">
                                     <span id="tbEmail"></span>
-                                  </div>
-                                  <div class="form-group">
+                                </div>
+                                <div class="form-group">
                                     <label for="password" class="col-form-label">Password</label>
                                     <input type="password" class="form-control" id="password">
                                     <span id="tbPassword"></span>
@@ -181,13 +188,13 @@
                                     <input type="number" class="form-control" id="phone">
                                     <span id="tbPhone"></span>
                                 </div>
-                                
+
                                 <div class="form-group">
-                                    <label class="col-form-label" >Gender</label>
+                                    <label class="col-form-label">Gender</label>
                                     <select class="gender form-control" id="gender">
-                                      <option>_____</option>
-                                      <option>Male</option>
-                                      <option>Female</option>
+                                        <option>_____</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
                                     </select>
                                 </div>
                             </div>
@@ -196,16 +203,16 @@
 
 
 
-                        
-                        
-                      </form>
+
+
+                    </form>
                 </div>
                 <div class="modal-footer">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                  <button type="submit" class="btn btn-primary" href ="#">Sign up</button>
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="submit" class="btn btn-primary" href="#">Sign up</button>
                 </div>
-              </div>
             </div>
+        </div>
         </div>
 
 
@@ -246,7 +253,21 @@
             <div class="container">
                 <h2 class="products__h2">Top Picks</h2>
                 <div class="products__item">
-                    <div class="row">
+                    <div class="row multiple-items">
+                        <div class="col-4">
+                            <div class="products__img ">
+                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
+                            </div>
+                            <h3>Kyrie 5 x Friends</h3>
+                            <p>price</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="products__img ">
+                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
+                            </div>
+                            <h3>Kyrie 5 x Friends</h3>
+                            <p>price</p>
+                        </div>
                         <div class="col-4">
                             <div class="products__img">
                                 <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
@@ -256,14 +277,7 @@
                         </div>
                         <div class="col-4">
                             <div class="products__img">
-                                  <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
-                            </div>
-                            <h3>Kyrie 5 x Friends</h3>
-                            <p>price</p>
-                        </div>
-                        <div class="col-4">
-                            <div class="products__img">
-                                  <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
+                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
                             </div>
                             <h3>Kyrie 5 x Friends</h3>
                             <p>price</p>
@@ -403,16 +417,34 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 
+    <!-- slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                // autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
 
 
 
-        <script src="./controller/main.js"></script>
- 
-        
+    <script src="./controller/main.js"></script>
+
+
 
 
 
