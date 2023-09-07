@@ -1,1 +1,637 @@
 //Code chỉnh responsive chung
+
+//Max-width of screen: 1650px
+@media screen and (max-width: 1650px) {
+    .container__body {
+        max-width: 1440px;
+    }
+    .container {
+        max-width: 1140px;
+    }
+    section.carousel {
+        .carousel__content {
+            .container {
+                .carousel__item {
+                    padding-right: 0 !important;
+                }
+            }
+        }
+        .carousel__line {
+            height: 140px;
+            top: 270px;
+            left: 372px;
+        }
+    }
+    section.create {
+        .container {
+            .create__text {
+                h2:nth-of-type(1) {
+                    font-size: 41px;
+                }
+            }
+        }
+        .create__line {
+            height: 207px;
+            top: -17px;
+            right: -570px;
+        }
+    }
+}
+//Max-width of screen: 1440px
+@media screen and (max-width: 1440px) {
+    .container__body {
+        max-width: 1140px;
+    }
+    .container {
+        max-width: 992px;
+    }
+    section.carousel {
+        .carousel__img {
+            height: 600px;
+        }
+        .carousel__content {
+            .container {
+                .carousel__item {
+                    padding-right: 0;
+                    .carousel__imgshoe {
+                        .carousel__air {
+                            font-size: 100px;
+                            top: 100px;
+                        }
+                        .carousel__textstyle {
+                            top: 243px;
+                            .carousel__jordan {
+                                font-size: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel__line {
+            height: 142px;
+            top: 234px;
+            left: 132px;
+        }
+    }
+    section.trending {
+        .trending__right {
+            gap: 30px;
+            padding-left: 15px;
+        }
+        .trending__left {
+            padding-right: 15px;
+            .trending__longimg {
+                .trending__text {
+                    bottom: 50px;
+                    left: 30px;
+                    P:first-of-type {
+                        font-size: 18px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 35px;
+                    }
+                    p:nth-of-type(2) {
+                        font-weight: 400;
+                        padding: 5px 0;
+                        font-size: 17px;
+                    }
+                    .trending__btn {
+                        padding: 8px 16px;
+                    }
+                }
+            }
+        }
+    }
+    section.create {
+        .container {
+            .create__text {
+                h2:nth-of-type(1) {
+                    font-size: 41px;
+                }
+            }
+        }
+        .create__line {
+            height: 180px;
+            top: 66px;
+            right: -570px;
+        }
+    }
+}
+//Max-width of screen: 1140px
+@media screen and (max-width: 1140px) {
+    .container__body {
+        max-width: 992px;
+    }
+    .container {
+        max-width: 768px;
+    }
+    section.carousel {
+        .carousel__content {
+            .container {
+                .carousel__text {
+                    // width: 50%;
+                    // P:first-of-type {
+                    //     font-size: 18px;
+                    // }
+                    h2:nth-of-type(1) {
+                        font-size: 39px;
+                    }
+                    // p:nth-of-type(2) {
+                    //     font-size: 12px;
+                    //     padding: 0 0;
+                    // }
+                    // .carousel__btn {
+                    //     font-size: 14px;
+                    // }
+                }
+                .carousel__item {
+                    transform: translate(0px, -30px);
+                    padding-right: 0;
+                    .carousel__imgshoe {
+                        .carousel__air {
+                            font-size: 80px;
+                            top: 76px;
+                        }
+                        .carousel__textstyle {
+                            top: 187px;
+                            left: 18px;
+                            .carousel__jordan {
+                                font-size: 80px;
+                            }
+                            .carousel__ring {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel__line {
+            transform: rotate(-49deg);
+            height: 110px;
+            top: 268px;
+            left: -20px;
+        }
+    }
+    section.trending {
+        .trending__left {
+            .trending__longimg {
+                .trending__text {
+                    bottom: 35px;
+                    left: 29px;
+                    P:first-of-type {
+                        font-size: 15px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 35px;
+                    }
+                    p:nth-of-type(2) {
+                        font-weight: 400;
+                        padding: 5px 0;
+                        font-size: 16px;
+                    }
+                    .trending__btn {
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+    section.create {
+        padding-top: 30px;
+        .container {
+            .create__text {
+                h2:nth-of-type(1) {
+                    font-size: 35px;
+                }
+            }
+        }
+        .create__line {
+            height: 137px;
+            top: -35px;
+            right: -570px;
+        }
+    }
+}
+//Max-width of screen: 992px
+@media screen and (max-width: 992px) {
+    .container__body {
+        max-width: 768px;
+    }
+    .container {
+        max-width: 576px;
+    }
+    section.carousel {
+        .carousel__img {
+            height: 460px;
+        }
+        .carousel__content {
+            .container {
+                .carousel__text {
+                    width: 50%;
+                    P:first-of-type {
+                        font-size: 18px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 29px;
+                    }
+                    p:nth-of-type(2) {
+                        font-size: 12px;
+                        padding: 0 0;
+                    }
+                    .carousel__btn {
+                        font-size: 14px;
+                    }
+                }
+                .carousel__item {
+                    transform: translate(0px, -30px);
+                    padding-right: 0;
+                    .carousel__imgshoe {
+                        .carousel__air {
+                            font-size: 70px;
+                            top: 42px;
+                            left: 11px;
+                        }
+                        .carousel__textstyle {
+                            top: 142px;
+                            left: 7px;
+                            .carousel__jordan {
+                                font-size: 62px;
+                            }
+                            .carousel__ring {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel__line {
+            transform: rotate(-49deg);
+            height: 82px;
+            top: 181px;
+            left: -174px;
+        }
+    }
+    section.products {
+        padding: 0 0;
+        .container {
+            .products__h2 {
+                @include styleText($color-black, $fs-3, $fw-4);
+                padding: 40px 0;
+            }
+        }
+        //btn
+        .slick-prev::before,
+        .slick-next::before {
+            padding: 7px;
+            font-size: 20px;
+        }
+        .slick-dots li button:before {
+            font-size: 12px;
+            top: 0;
+        }
+    }
+    section.create {
+        padding-top: 20px;
+        .container {
+            padding: 50px 0;
+            .create__text {
+                P:first-of-type {
+                    font-size: 18px;
+                }
+                h2:nth-of-type(1) {
+                    font-size: 25px;
+                }
+                p:nth-of-type(2) {
+                    font-size: 12px;
+                    padding: 15px 0;
+                }
+            }
+        }
+        .create__line {
+            width: 850px;
+            height: 102px;
+            top: -162px;
+            right: -570px;
+        }
+    }
+    section.trending {
+        .trending__right {
+            gap: 20px;
+            padding-left: 10px;
+        }
+        .trending__left {
+            padding-right: 10px;
+            .trending__longimg {
+                .trending__text {
+                    bottom: 20px;
+                    left: 20px;
+                    P:first-of-type {
+                        font-size: 15px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 25px;
+                    }
+                    p:nth-of-type(2) {
+                        font-weight: 400;
+                        padding: 5px 0;
+                        font-size: 12px;
+                    }
+                    .trending__btn {
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+//Max-width of screen: 768px
+@media screen and (max-width: 768px) {
+    .container__body {
+        max-width: 576px;
+    }
+    .container {
+        width: 500px;
+    }
+    section.carousel {
+        .carousel__img {
+            height: 370px;
+        }
+        .carousel__content {
+            .container {
+                .carousel__text {
+                    width: 50%;
+                    P:first-of-type {
+                        font-size: 18px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 29px;
+                    }
+                    p:nth-of-type(2) {
+                        font-size: 12px;
+                        padding: 0 0;
+                    }
+                    .carousel__btn {
+                        font-size: 14px;
+                    }
+                }
+                .carousel__item {
+                    transform: translate(0px, -30px);
+                    padding-right: 0;
+                    .carousel__imgshoe {
+                        .carousel__air {
+                            font-size: 63px;
+                            top: 34px;
+                            left: 11px;
+                        }
+                        .carousel__textstyle {
+                            top: 121px;
+                            left: 7px;
+                            .carousel__jordan {
+                                font-size: 55px;
+                            }
+                            .carousel__ring {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel__line {
+            width: 1000px;
+            transform: rotate(-49deg);
+            height: 70px;
+            top: 181px;
+            left: -81px;
+        }
+    }
+    section.products {
+        padding: 0 0;
+        .container {
+            .products__h2 {
+                @include styleText($color-black, $fs-3, $fw-4);
+                padding: 40px 0;
+            }
+        }
+        //btn
+        .slick-prev::before,
+        .slick-next::before {
+            padding: 7px;
+            font-size: 20px;
+        }
+        .slick-dots li button:before {
+            font-size: 12px;
+            top: 0;
+        }
+    }
+    section.create {
+        padding-top: 0px;
+        .container {
+            padding: 20px 0;
+            .create__text {
+                P:first-of-type {
+                    font-size: 14px;
+                }
+                h2:nth-of-type(1) {
+                    font-size: 20px;
+                }
+                p:nth-of-type(2) {
+                    font-size: 12px;
+                    padding: 0;
+                }
+                .create__btn {
+                    font-size: 13px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .create__line {
+            width: 800px;
+            height: 82px;
+            top: -178px;
+            right: -570px;
+        }
+    }
+    section.trending {
+        .trending__right {
+            gap: 20px;
+            padding-left: 10px;
+        }
+        .trending__left {
+            padding-right: 10px;
+            .trending__longimg {
+                .trending__text {
+                    bottom: 20px;
+                    left: 20px;
+                    P:first-of-type {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                    p:nth-of-type(2) {
+                        font-weight: 400;
+                        padding: 5px 0;
+                        font-size: 12px;
+                    }
+                    .trending__btn {
+                        padding: 5px 10px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .container__body {
+        max-width: 410px;
+    }
+    .container {
+        width: 390px;
+    }
+    section.carousel {
+        .carousel__img {
+            height: 267px;
+        }
+        .carousel__content {
+            .container {
+                .carousel__text {
+                    width: 45%;
+                    P:first-of-type {
+                        font-size: 13px;
+                        margin: 5px 0 0;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 17px;
+                    }
+                    p:nth-of-type(2) {
+                        font-size: 9px;
+                        padding: 0 0;
+                    }
+                    .carousel__btn {
+                        font-size: 9px;
+                        padding: 5px 10px;
+                    }
+                }
+                .carousel__item {
+                    width: 55%;
+                    transform: translate(0px, -30px);
+                    padding-right: 0;
+                    .carousel__imgshoe {
+                        .carousel__air {
+                            font-size: 52px;
+                            top: 34px;
+                            left: 11px;
+                        }
+                        .carousel__textstyle {
+                            top: 103px;
+                            left: 7px;
+                            .carousel__jordan {
+                                font-size: 45px;
+                            }
+                            .carousel__ring {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel__line {
+            width: 1000px;
+            transform: rotate(-50deg);
+            height: 55px;
+            top: 110px;
+            left: -182px;
+        }
+    }
+    section.products {
+        padding: 0 0;
+        .container {
+            .products__h2 {
+                @include styleText($color-black, $fs-3, $fw-4);
+                padding: 40px 0;
+            }
+        }
+        //btn
+        .slick-prev::before,
+        .slick-next::before {
+            padding: 7px;
+            font-size: 20px;
+        }
+        .slick-dots li button:before {
+            font-size: 12px;
+            top: 0;
+        }
+    }
+    section.trending {
+        .trending__h2 {
+            padding: 10px 0 !important;
+            font-size: 15px !important;
+        }
+        .trending__right {
+            gap: 10px;
+            padding-left: 5px;
+        }
+        .trending__left {
+            padding-right: 5px;
+            .trending__longimg {
+                .trending__text {
+                    bottom: 20px;
+                    left: 20px;
+                    P:first-of-type {
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                    h2:nth-of-type(1) {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                    p:nth-of-type(2) {
+                        font-weight: 400;
+                        padding: 5px 0;
+                        font-size: 12px;
+                    }
+                    .trending__btn {
+                        padding: 5px 10px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    section.create {
+        padding-top: 0px;
+        .container {
+            padding: 20px 0;
+            .create__text {
+                P:first-of-type {
+                    font-size: 14px;
+                }
+                h2:nth-of-type(1) {
+                    font-size: 20px;
+                }
+                p:nth-of-type(2) {
+                    font-size: 12px;
+                    padding: 0;
+                }
+                .create__btn {
+                    font-size: 13px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .create__line {
+            width: 800px;
+            height: 82px;
+            top: -178px;
+            right: -570px;
+        }
+    }
+}

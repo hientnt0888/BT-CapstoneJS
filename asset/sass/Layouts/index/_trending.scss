@@ -12,10 +12,10 @@
         }
     }
 }
-.trending__left {
+.trending__right {
     display: grid;
-    gap: 60px;
-    padding-left: 30px;
+    gap: 40px;
+    padding-left: 20px;
     height: 100%;
     .trending__shortimg {
         position: relative;
@@ -34,10 +34,11 @@
         }
     }
 }
-.trending__right {
+.trending__left {
     height: 100%;
-    padding-right: 30px;
+    padding-right: 20px;
     .trending__longimg {
+        height: 100%;
         position: relative;
         img {
             width: 100%;
