@@ -70,11 +70,11 @@
     <div class="container__body">
         <div class="carousel py-4">
             
-                <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <!-- <div id="thongbao" class="alert alert-danger d-none face" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
-                </div>
+                </div> -->
     
                 <h1 class="text-center py-4 carousel__cart">My cart</h1>
                 <div class="row">
@@ -91,7 +91,9 @@
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <tbody class="tableCart"></tbody>
+                            <tbody id="tableCart">
+                                <!-- <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td> -->
+                            </tbody>
                            
                         </table>
 
@@ -107,62 +109,69 @@
                
             
         </div>
-    </div>
 
-    <footer>
-        <div class="container">
-            <div class="row footer__content">
-                <div class="col-3"><div class="footer__logo">
-                    <img src="../asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
-                </div></div>
-                <div class="col-2">
-                    <ul class="navbar-nav">
-                        <li>
-                            <h3>Info</h3>
-                        </li>
-                        <li><a href="#">Find a store</a></li>
-                        <li><a href="#">Discount</a></li>
-                        <li><a href="#">Gift</a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Become a member</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="navbar-nav">
-                        <li>
-                            <h3>Shop</h3>
-                        </li>
-                        <li><a href="#">Man</a></li>
-                        <li><a href="#">Woman</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="navbar-nav">
-                        <li>
-                            <h3>About</h3>
-                        </li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <div class="footer__icon">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+        <footer>
+            <div class="container container__footer">
+                <div class="row footer__content">
+                    <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5"><div class="footer__logo">
+                        <img src="../asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
+                    </div></div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6   mt-sm-0 mt-5">
+                        <ul class="navbar-nav-cart">
+                            <li>
+                                <h3>Info</h3>
+                            </li>
+                            <li><a href="#">Find a store</a></li>
+                            <li><a href="#">Discount</a></li>
+                            <li><a href="#">Gift</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Become a member</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6  mt-lg-0 mt-5">
+                        <ul class="navbar-nav-cart">
+                            <li>
+                                <h3>Shop</h3>
+                            </li>
+                            <li><a href="#">Man</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6  mt-lg-0 mt-5">
+                        <ul class="navbar-nav-cart">
+                            <li>
+                                <h3>About</h3>
+                            </li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-5 col-6  mt-lg-0 mt-5">
+                        <div class="footer__icon__cart">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="footer__bottom">
+                    <p class="col-lg-8 ">2023 .Sport <br>All rights reserved</p>
+                    <p class="col-lg-4 ">Privace & Cookie Policy</p>
+                </div>
             </div>
-            <div class="footer__bottom">
-                <p>2023 .Sport <br>All rights reserved</p>
-                <p>Privace & Cookie Policy</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+
+    </div>
+
+
+  
+
+ 
     
 
 

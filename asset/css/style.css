@@ -390,26 +390,95 @@ footer {
   font-weight: 400;
 }
 
-.modal-backdrop {
-  z-index: 1;
+.footer__bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: #8c8585;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-#signIn {
-  margin-top: 90px;
+.body__sign {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #29323c, #485563);
 }
 
-.modal-title {
+.main {
+  width: 350px;
+  height: 500px;
+  background: red;
+  overflow: hidden;
+  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/cover;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+}
+
+#chk {
+  display: none;
+}
+
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: #fff;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+input {
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60%/10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+}
+
+.login label {
   color: black;
-  font-size: 1.8rem;
-  font-weight: 700;
+  transform: scale(0.6);
 }
 
-.form-group {
-  font-size: 20px;
-  font-weight: 600;
+#chk:checked ~ .login {
+  transform: translateY(-500px);
 }
 
-.btn {
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
+}
+
+.btnSign {
   background: black;
   padding: 10px 20px;
   border-radius: none;
@@ -418,21 +487,26 @@ footer {
   color: white;
   font-size: 18px;
   font-weight: 400;
-  width: 100%;
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.btnSign:hover {
+  background: rgb(155, 141, 141);
 }
 
-.modal-footer p {
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0 auto;
-}
-
-#signUp {
-  margin-top: 90px;
-}
-#signUp .modal-body, #signUp .modal-footer, #signUp .modal-header {
-  padding: 10px 18px;
+#chk .form span {
+  color: red;
 }
 
 .carousel__cart {
@@ -453,4 +527,28 @@ footer {
 
 .cart__btn {
   margin: 25px 0 80px 0;
+}
+.cart__btn:hover {
+  background: rgb(155, 141, 141);
+}
+
+.container__footer {
+  color: white;
+}
+.container__footer ul {
+  list-style: none;
+}
+.container__footer a {
+  color: white;
+}
+
+@media (min-width: 400px) {
+  .container__footer {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 396px) {
+  .container__footer {
+    padding: 0 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

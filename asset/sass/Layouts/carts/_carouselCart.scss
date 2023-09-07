@@ -11,4 +11,36 @@
 }
 .cart__btn{
     margin: 25px 0  80px 0;
+    &:hover{
+        background: rgb(155, 141, 141);
+    }
+}
+
+
+// footer 
+
+
+// .footer__cart{
+//     padding: 50px 0 50px;
+// }
+
+.container__footer{
+    color: $color-white;
+    ul{
+        list-style: none;
+    }
+    a{
+        color: $color-white;
+    }
+  
+}
+@media (min-width:400px) {
+    .container__footer{
+        padding: 0 100px;
+    }
+}
+@media (max-width:396px) {
+    .container__footer{
+        padding: 0 20px;
+    }
 }

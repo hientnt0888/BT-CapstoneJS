@@ -8,7 +8,9 @@
 
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- font-awesome -->
@@ -56,167 +58,14 @@
                                 <a class="nav-link" href="#">SEARCH</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="modal" data-target="#signIn" href="#signIn">MY CART
+                                <a class="nav-link"  href="./view/sign.html" >MY CART
                                     (<span></span>)</a>
-
-
-
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-
-
-
-        <!-- modal sign in  -->
-        <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sign in to your account</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="email" class="col-form-label">Email</label>
-                                <input type="email" class="form-control" id="email">
-                                <span id="tbEmail"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="col-form-label">Password</label>
-                                <input type="password" class="form-control" id="password">
-                                <span id="tbPassword"></span>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                        <p>Don’t have an account yet? <a href="" data-toggle="modal" data-target="#signUp">Sign up</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                    <p>Don’t have an account yet? <a id="signUp_next" href="" data-toggle="modal"
-                            data-target="#signUp">Sign up</a></p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-        <!-- modal sign up -->
-        <div class="modal fade modal-second" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sign up to your account</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="email" class="col-form-label">Email</label>
-                                <input type="email" class="form-control" id="email">
-                                <span id="tbEmail"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="name" class="col-form-label">Name</label>
-                                <input type="text" class="form-control" id="name">
-                                <span id="tbName"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" class="col-form-label">Phone</label>
-                                <input type="number" class="form-control" id="phone">
-                                <span id="tbPhone"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="col-form-label">Password</label>
-                                <input type="password" class="form-control" id="password">
-                                <span id="tbPassword"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="confirm" class="col-form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirm">
-                                <span id="tbConfirm"></span>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                        <button type="submit" class="btn btn-primary">Sign up</button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="email" class="col-form-label">Email</label>
-                                    <input type="email" class="form-control" id="email">
-                                    <span id="tbEmail"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-form-label">Password</label>
-                                    <input type="password" class="form-control" id="password">
-                                    <span id="tbPassword"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="confirm" class="col-form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirm">
-                                    <span id="tbConfirm"></span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="name" class="col-form-label">Name</label>
-                                    <input type="text" class="form-control" id="name">
-                                    <span id="tbName"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone" class="col-form-label">Phone</label>
-                                    <input type="number" class="form-control" id="phone">
-                                    <span id="tbPhone"></span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-form-label">Gender</label>
-                                    <select class="gender form-control" id="gender">
-                                        <option>_____</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                    <button type="submit" class="btn btn-primary" href="#">Sign up</button>
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-        <!--  -->
 
 
     </header>
