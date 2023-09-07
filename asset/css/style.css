@@ -390,6 +390,15 @@ footer {
   font-weight: 400;
 }
 
+.footer__bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: #8c8585;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .body__sign {
   margin: 0;
   padding: 0;
@@ -397,8 +406,7 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Jost", sans-serif;
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(to bottom, #29323c, #485563);
 }
 
 .main {
@@ -454,7 +462,7 @@ input {
 }
 
 .login label {
-  color: #573b8a;
+  color: black;
   transform: scale(0.6);
 }
 
@@ -471,13 +479,19 @@ input {
 }
 
 .btnSign {
+  background: black;
+  padding: 10px 20px;
+  border-radius: none;
+  border: none;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
   width: 60%;
   height: 40px;
   margin: 10px auto;
   justify-content: center;
   display: block;
-  color: #fff;
-  background: #573b8a;
   font-size: 1em;
   font-weight: bold;
   margin-top: 20px;
@@ -488,7 +502,11 @@ input {
   cursor: pointer;
 }
 .btnSign:hover {
-  background: #6d44b8;
+  background: rgb(155, 141, 141);
+}
+
+#chk .form span {
+  color: red;
 }
 
 .carousel__cart {
@@ -509,4 +527,28 @@ input {
 
 .cart__btn {
   margin: 25px 0 80px 0;
+}
+.cart__btn:hover {
+  background: rgb(155, 141, 141);
+}
+
+.container__footer {
+  color: white;
+}
+.container__footer ul {
+  list-style: none;
+}
+.container__footer a {
+  color: white;
+}
+
+@media (min-width: 400px) {
+  .container__footer {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 396px) {
+  .container__footer {
+    padding: 0 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

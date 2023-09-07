@@ -5,8 +5,9 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	// background: linear-gradient(to bottom, #151318, #85854b, #555550);
+	background: linear-gradient(to bottom, #29323c,#485563);
+	
 }
 
 .main{
@@ -56,7 +57,7 @@ input{
 	transition: .8s ease-in-out;
 }
 .login label{
-	color: #573b8a;
+	color: $color-black;
 	transform: scale(.6);
 }
 
@@ -70,13 +71,13 @@ input{
 	transform: scale(.6);
 }
 .btnSign{
+	@include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
+    @include styleText($color-white, $fs-1, $fw-1);
     width: 60%;
 	height: 40px;
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	color: #fff;
-	background: #573b8a;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -86,6 +87,13 @@ input{
 	transition: .2s ease-in;
 	cursor: pointer;
     &:hover{
-        background: #6d44b8;
+        background: rgb(155, 141, 141);
     }
+}
+#chk{
+	.form{
+		span{
+			color: red;
+		}
+	}
 }
