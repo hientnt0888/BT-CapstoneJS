@@ -8,12 +8,11 @@ $("#signUp_next").on("click", function () {
 
 var apiSP = new ApiProduct();
 var listProducts = new ListProducts();
-
+var quantity = 0;
 // lấy danh sách sản phẩm từ backend
 function layDanhSachSP() {
     apiSP.apiProducts.then(function (Response) {
         hienThiSP(Response.data.content);
-        console.log("🚀 ~ file: main.js:15 ~ Response.data.content:", Response.data.content)
     });
 }
 layDanhSachSP()
@@ -29,46 +28,48 @@ function hienThiSP(mang) {
                 </div>
                 <h3>${products.name}</h3>
                 <p>${products.price}$</p>
-                <button class= 'btn btn-info' onclick= 'clickMore(${products.id})'>More</button>
-                <button class= 'btn btn-primary'>Buy</button>
+                <button class= 'btn btn-warning'><a href="../view/cart.html" target="_blank" onclick= 'clickMore(${products.id})'>Add</a></button>
+                <button class= 'btn btn-primary'>More</button>
             </div>`
     });
     document.getElementById("displayProducts").innerHTML = content;
 }
 
-//Khi click more thì sẽ sang trang cart và set local storage
+//Khi click more thì thêm sản phẩm vào arrayProducts và lưu xuống localstorage
 function clickMore(id) {
+    var checkID = listProducts.arrayProducts.findIndex(function (sp) {
+        return id == sp.id;
+    })
+    console.log("🚀 ~ file: main.js:43 ~ checkID ~ checkID:", checkID)
+    //Kiểm tra có sp nào được click mua nhiều lần không nếu có thì không đẩy vào arrayProducts
+
     apiSP.apiDisplayProds(id).then(function (Response) {
-      
-        listProducts.pushProducts(Response.data.content);
-        window.open("../view/cart.html");
-        setLocalStorage();
-        getLocalStorage()
+        if (checkID == -1) {
+            quantity++;
+            listProducts.pushProducts(Response.data.content);
+            setLocalStorage("DSSP", listProducts.arrayProducts);
+            // window.open("../view/cart.html");
+        } else {
+            quantity++;
+        }
+        setLocalStorage("Quality", quantity)
+        document.getElementById("spanMyCart").innerHTML = quantity;
+        console.log("🚀 ~ file: main.js:57 ~ quantity:", quantity)
+
     });
 }
 
-//Hiển thị sản phẩm trong giỏ hàng
-
 
 //set Loal Storage
-function setLocalStorage() {
-    localStorage.setItem("DSSP", JSON.stringify(listProducts.arrayProducts));
+function setLocalStorage(name, array) {
+    localStorage.setItem(name, JSON.stringify(array));
 }
 
 //get local storage
-function getLocalStorage() {
-    if (localStorage.getItem("DSSP") != null) {
-        listProducts.arrayProducts = JSON.parse(localStorage.getItem("DSSP"));
-        myCart(listProducts.arrayProducts);
-        console.log("🚀 ~ file: main.js:63 ~ getLocalStorage ~ listProducts.arrayProducts:", listProducts.arrayProducts)
-    }
-}
-getLocalStorage()
-function myCart(array) {
-    console.log("🚀 ~ file: main.js:68 ~ myCart ~ array:", array)
-    var info = `
-       <tr>
-           <td>${array.id}</td>
-       </tr>`
-       document.getElementById("tableCart").innerHTML = info;
-}
+// function getLocalStorage() {
+//     if (localStorage.getItem("DSSP") != null) {
+//         listProducts.arrayProducts = JSON.parse(localStorage.getItem("DSSP"));
+//         // myCart(listProducts.arrayProducts);
+//     }
+// }
+// getLocalStorage()
