@@ -964,6 +964,12 @@ footer {
   min-height: 100vh;
   background: linear-gradient(to bottom, #29323c, #485563);
 }
+.body__sign span {
+  padding-left: 70px;
+}
+.body__sign .form-group {
+  margin-bottom: 0;
+}
 
 .main {
   width: 350px;
@@ -990,7 +996,7 @@ label {
   font-size: 2.3em;
   justify-content: center;
   display: flex;
-  margin: 60px;
+  margin: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -1002,7 +1008,7 @@ input {
   background: #e0dede;
   justify-content: center;
   display: flex;
-  margin: 20px auto;
+  margin: 0 auto 10px;
   padding: 10px;
   border: none;
   outline: none;
@@ -1013,7 +1019,7 @@ input {
   height: 460px;
   background: #eee;
   border-radius: 60%/10%;
-  transform: translateY(-180px);
+  transform: translateY(-120px);
   transition: 0.8s ease-in-out;
 }
 
@@ -1023,7 +1029,7 @@ input {
 }
 
 #chk:checked ~ .login {
-  transform: translateY(-500px);
+  transform: translateY(-450px);
 }
 
 #chk:checked ~ .login label {

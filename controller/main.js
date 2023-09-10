@@ -1,10 +1,10 @@
 // xử lý modal 
-$("#signUp_next").on("click", function () {
-    $('#signIn').modal('hide');
-});
-$("#signUp_next").on("click", function () {
-    $('#signUp').modal('show');
-});
+// $("#signUp_next").on("click", function () {
+//     $('#signIn').modal('hide');
+// });
+// $("#signUp_next").on("click", function () {
+//     $('#signUp').modal('show');
+// });
 
 var apiSP = new ApiProduct();
 var listProducts = new ListProducts();
@@ -60,6 +60,8 @@ function clickMore(id) {
 }
 
 
+
+
 //set Loal Storage
 function setLocalStorage(name, array) {
     localStorage.setItem(name, JSON.stringify(array));
@@ -73,3 +75,5 @@ function setLocalStorage(name, array) {
 //     }
 // }
 // getLocalStorage()
+
+
