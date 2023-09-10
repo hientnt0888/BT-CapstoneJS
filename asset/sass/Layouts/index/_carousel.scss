@@ -36,24 +36,22 @@
                     @include styleText($color-black, $fs-2, $fw-1);
                 }
                 h2:nth-of-type(1) {
-                    @include styleText($color-black, $fs-3, $fw-3);
+                    @include styleText($color-black, $fs-3, $fw-4);
                 }
                 p:nth-of-type(2) {
                     @include styleText($color-black, $fs-1, $fw-2);
                     padding: $pd-2 0;
                 }
-                .carousel__btn {
-                    @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
-                    @include styleText($color-white, $fs-1, $fw-1);
-                }
             }
             .carousel__item {
                 width: 50%;
-                transform: translate(60px, -80px);
+                transform: translate(0px, -80px);
+                padding-right: 145px;
 
                 .carousel__imgshoe {
                     img {
                         position: relative;
+                        width: 100%;
                         z-index: 10;
                     }
                     .carousel__air {
@@ -83,15 +81,15 @@
             }
         }
     }
-    .carousel__line{
-        height: 140px;
+    .carousel__line {
+        height: 160px;
         width: 1500px;
         background: rgb(255, 187, 0);
         background: linear-gradient(90deg, rgba(255, 187, 0, 0.751) 53%, rgba(230, 230, 230, 0.51) 53%);
         transform: rotate(-45deg);
         position: absolute;
-        top: 237px;
-        left: 582px;
+        top: 260px;
+        left: 475px;
         z-index: 0;
     }
 }

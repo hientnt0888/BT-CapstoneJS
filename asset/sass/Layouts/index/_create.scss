@@ -1,4 +1,5 @@
 .create {
+    padding-top: 150px;
     position: relative;
     // overflow: hidden;
     .container {
@@ -18,10 +19,7 @@
                 @include styleText($color-black, $fs-1, $fw-2);
                 padding: $pd-2 0;
             }
-            .create__btn {
-                @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
-                @include styleText($color-white, $fs-1, $fw-1);
-            }
+            
         }
         .create__imgshoe {
             width: 65%;
@@ -37,7 +35,7 @@
         background: rgb(255, 187, 0);
         transform: rotate(-45deg);
         position: absolute;
-        top: -115px;
+        top: 34px;
         right: -570px;
         z-index: 1;
     }

@@ -28,7 +28,7 @@
     <header>
         <div class="container__body">
             <div class="container">
-                <nav class="navbar navbar-expand-lg nav">
+                <nav class="navbar navbar-expand-xl nav">
                     <a class="navbar-brand nav__logo" href="#"> <img src="./asset/img/images-removebg-preview.png"
                             alt="logo">
                     </a>
@@ -59,7 +59,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"  href="./view/sign.html" >MY CART
-                                    (<span></span>)</a>
+                                    (<span id="spanMyCart"></span>)</a>
                             </li>
                         </ul>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="carousel__text">
                         <p>Men's Shoe</p>
                         <h2>New Jordan 6 Rings</h2>
-                        <p>The Jordan 6 Rings Men's Shoe celebrates a legendary career with <br> classic design
+                        <p>The Jordan 6 Rings Men's Shoe celebrates a legendary career with classic design
                             lines
                             and detailing for streamlined hoops style</p>
                         <button class="carousel__btn">Go to collection</button>
@@ -102,35 +102,39 @@
             <div class="container">
                 <h2 class="products__h2">Top Picks</h2>
                 <div class="products__item">
-                    <div class="row multiple-items">
-                        <div class="col-4">
-                            <div class="products__img ">
+                    <div class="row" id="displayProducts"> <!--multiple-items-->
+                        <!-- <div class="col-4">
+                            <div class="products__img  toppick">
                                 <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
                             </div>
-                            <h3>Kyrie 5 x Friends</h3>
-                            <p>price</p>
+                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
+                            <p class="priceshoe">price</p>
+                            <button class="show-details"></button>
                         </div>
                         <div class="col-4">
-                            <div class="products__img ">
+                            <div class="products__img  toppick">
                                 <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
                             </div>
-                            <h3>Kyrie 5 x Friends</h3>
-                            <p>price</p>
+                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
+                            <p class="priceshoe">price</p>
+                            <button class="show-details"></button>
                         </div>
                         <div class="col-4">
-                            <div class="products__img">
+                            <div class="products__img toppick">
                                 <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
                             </div>
-                            <h3>Kyrie 5 x Friends</h3>
-                            <p>price</p>
+                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
+                            <p class="priceshoe">price</p>
+                            <button class="show-details"></button>
                         </div>
                         <div class="col-4">
-                            <div class="products__img">
+                            <div class="products__img toppick">
                                 <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
                             </div>
-                            <h3>Kyrie 5 x Friends</h3>
-                            <p>price</p>
-                        </div>
+                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
+                            <p class="priceshoe">price</p>
+                            <button class="show-details"></button>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -140,7 +144,7 @@
                 <h2 class="trending__h2">Trending Now</h2>
                 <div class="row">
                     <div class="col-6">
-                        <div class="trending__right">
+                        <div class="trending__left">
                             <div class="trending__longimg">
                                 <div class="overlay"></div>
                                 <img src="./asset/img/e7c3a30d41103aedbae482c7e3839d74.jpg"
@@ -155,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="trending__left">
+                        <div class="trending__right">
                             <div class="trending__shortimg">
                                 <div class="overlay"></div>
                                 <img src="./asset/img/nike_react_presto_psychedelic_lava.jpg"
@@ -176,8 +180,8 @@
             <div class="container">
                 <div class="create__text">
                     <p>Create your design</p>
-                    <h2>NIKE REACT PRESTO <br> BY YOU</h2>
-                    <p>Take advantage of brand new, properiatary cushioning <br>technology with a fresh pair of Nike
+                    <h2>NIKE REACT PRESTO BY YOU</h2>
+                    <p>Take advantage of brand new, properiatary cushioning technology with a fresh pair of Nike
                         React shoes.</p>
                     <button class="create__btn">Create</button>
                 </div>
@@ -246,23 +250,12 @@
         </footer>
     </div>
 
-
-
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script> -->
-
-
-
+    <!-- jquery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -274,7 +267,6 @@
 
     <!-- slick -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script type="text/javascript">
         $(document).ready(function () {
             $('.multiple-items').slick({
@@ -288,16 +280,10 @@
             });
         });
     </script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./model/CallAPI.js"></script>
+    <script src="/model/ListProduct.js"></script>
     <script src="./controller/main.js"></script>
-
-
-
-
-
-
 </body>
 
 </html>

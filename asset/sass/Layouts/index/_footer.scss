@@ -30,6 +30,11 @@ footer {
                 }
             }
         }
+        .footer__logo{
+            img{
+                width: 100%;
+            }
+        }
     }
     .col-3:first-of-type{
         display: flex;
