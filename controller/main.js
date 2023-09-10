@@ -1,52 +1,79 @@
+// xử lý modal 
+// $("#signUp_next").on("click", function () {
+//     $('#signIn').modal('hide');
+// });
+// $("#signUp_next").on("click", function () {
+//     $('#signUp').modal('show');
+// });
 
-
-var dsa = new DanhSachAccount();
-var validation = new Validation();
-function queryELE(query) {
-    return document.querySelector(query);
+var apiSP = new ApiProduct();
+var listProducts = new ListProducts();
+var quantity = 0;
+// lấy danh sách sản phẩm từ backend
+function layDanhSachSP() {
+    apiSP.apiProducts.then(function (Response) {
+        hienThiSP(Response.data.content);
+    });
 }
-function setLocalStorage() {
-    localStorage.setItem("DSA", JSON.stringify(dsa.mangAccount));
+layDanhSachSP()
+
+//Hiển thị danh sách sản phẩm
+function hienThiSP(mang) {
+    var content = "";
+    mang.map(function (products, index) {
+        content += `
+            <div class='col-4'>
+                <div class= 'products__img'>
+                     <img src="${products.image}" alt="img products">
+                </div>
+                <h3>${products.name}</h3>
+                <p>${products.price}$</p>
+                <button class= 'btn btn-warning'><a href="../view/cart.html" target="_blank" onclick= 'clickMore(${products.id})'>Add</a></button>
+                <button class= 'btn btn-primary'>More</button>
+            </div>`
+    });
+    document.getElementById("displayProducts").innerHTML = content;
 }
-function getLocalStorage() {
-    if (localStorage.getItem("DSA") != null) {
-        dsa.mangAccount = JSON.parse(localStorage.getItem("DSA"));
-    }
 
+//Khi click more thì thêm sản phẩm vào arrayProducts và lưu xuống localstorage
+function clickMore(id) {
+    var checkID = listProducts.arrayProducts.findIndex(function (sp) {
+        return id == sp.id;
+    })
+    console.log("🚀 ~ file: main.js:43 ~ checkID ~ checkID:", checkID)
+    //Kiểm tra có sp nào được click mua nhiều lần không nếu có thì không đẩy vào arrayProducts
+
+    apiSP.apiDisplayProds(id).then(function (Response) {
+        if (checkID == -1) {
+            quantity++;
+            listProducts.pushProducts(Response.data.content);
+            setLocalStorage("DSSP", listProducts.arrayProducts);
+            // window.open("../view/cart.html");
+        } else {
+            quantity++;
+        }
+        setLocalStorage("Quality", quantity)
+        document.getElementById("spanMyCart").innerHTML = quantity;
+        console.log("🚀 ~ file: main.js:57 ~ quantity:", quantity)
+
+    });
 }
 
-getLocalStorage();
-
-function themAccount() {
-    var userName = queryELE("#userName").value;
-    var email = queryELE("#email").value;
-    var phone = queryELE("#phone").value;
-    var pass = queryELE("#password").value;
-   
-
-    var isValid = true;
 
 
-    // userName
-    isValid &= validation.checkEmpty(userName, "Username không được để trống", "tbNameUp") && validation.checkUserName(userName, "Username không được trùng", "tbNameUp",dsa.mangAccount); 
-    // email 
-    isValid &= validation.checkEmpty(email, "Email không được để trống", "tbEmailUp") && validation.checkEmail(email,"Email không hợp lệ","tbEmailUp"); 
-    // phone 
-    isValid &= validation.checkEmpty(phone, "Phone không được để trống", "tbPhoneUp") && validation.checkPhone(phone,"Phone không hợp lệ","tbPhoneUp"); 
-    // pass
-    isValid &= validation.checkEmpty(pass, "Password không được để trống", "tbPasswordUp") && validation.checkPass(pass,"Password không hợp lệ","tbPasswordUp");
 
-
-    if (isValid) {
-        var account = new Account(userName, email, phone,pass);
-        
-        dsa.themAccount(account);
-      
-        setLocalStorage();
-
-    }
-
- queryELE("#logIn").checked();  
+//set Loal Storage
+function setLocalStorage(name, array) {
+    localStorage.setItem(name, JSON.stringify(array));
 }
-queryELE("#btnSignUp").onclick = themAccount;
+
+//get local storage
+// function getLocalStorage() {
+//     if (localStorage.getItem("DSSP") != null) {
+//         listProducts.arrayProducts = JSON.parse(localStorage.getItem("DSSP"));
+//         // myCart(listProducts.arrayProducts);
+//     }
+// }
+// getLocalStorage()
+
 

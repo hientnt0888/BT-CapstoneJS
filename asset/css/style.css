@@ -25,11 +25,592 @@ body, html {
   padding: 0;
 }
 
+@media screen and (max-width: 1650px) {
+  .container__body {
+    max-width: 1440px;
+  }
+  .container {
+    max-width: 1140px;
+  }
+  section.carousel .carousel__content .container .carousel__item {
+    padding-right: 0 !important;
+  }
+  section.carousel .carousel__line {
+    height: 140px;
+    top: 270px;
+    left: 372px;
+  }
+  section.create .container .create__text h2:nth-of-type(1) {
+    font-size: 41px;
+  }
+  section.create .create__line {
+    height: 207px;
+    top: -17px;
+    right: -570px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container__body {
+    max-width: 1140px;
+  }
+  .container {
+    max-width: 992px;
+  }
+  section.carousel .carousel__img {
+    height: 600px;
+  }
+  section.carousel .carousel__content .container .carousel__item {
+    padding-right: 0;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__air {
+    font-size: 100px;
+    top: 100px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle {
+    top: 243px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__jordan {
+    font-size: 100px;
+  }
+  section.carousel .carousel__line {
+    height: 142px;
+    top: 234px;
+    left: 132px;
+  }
+  section.trending .trending__right {
+    gap: 30px;
+    padding-left: 15px;
+  }
+  section.trending .trending__left {
+    padding-right: 15px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text {
+    bottom: 50px;
+    left: 30px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text P:first-of-type {
+    font-size: 18px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text h2:nth-of-type(1) {
+    font-size: 35px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text p:nth-of-type(2) {
+    font-weight: 400;
+    padding: 5px 0;
+    font-size: 17px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text .trending__btn {
+    padding: 8px 16px;
+  }
+  section.create .container .create__text h2:nth-of-type(1) {
+    font-size: 41px;
+  }
+  section.create .create__line {
+    height: 180px;
+    top: 66px;
+    right: -570px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .container__body {
+    max-width: 992px;
+  }
+  .container {
+    max-width: 768px;
+  }
+  section.carousel .carousel__content .container .carousel__text h2:nth-of-type(1) {
+    font-size: 39px;
+  }
+  section.carousel .carousel__content .container .carousel__item {
+    transform: translate(0px, -30px);
+    padding-right: 0;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__air {
+    font-size: 80px;
+    top: 76px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle {
+    top: 187px;
+    left: 18px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__jordan {
+    font-size: 80px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__ring {
+    font-size: 40px;
+  }
+  section.carousel .carousel__line {
+    transform: rotate(-49deg);
+    height: 110px;
+    top: 268px;
+    left: -20px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text {
+    bottom: 35px;
+    left: 29px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text P:first-of-type {
+    font-size: 15px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text h2:nth-of-type(1) {
+    font-size: 35px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text p:nth-of-type(2) {
+    font-weight: 400;
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text .trending__btn {
+    padding: 5px 10px;
+  }
+  section.create {
+    padding-top: 30px;
+  }
+  section.create .container .create__text h2:nth-of-type(1) {
+    font-size: 35px;
+  }
+  section.create .create__line {
+    height: 137px;
+    top: -35px;
+    right: -570px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container__body {
+    max-width: 768px;
+  }
+  .container {
+    max-width: 576px;
+  }
+  section.carousel .carousel__img {
+    height: 460px;
+  }
+  section.carousel .carousel__content .container .carousel__text {
+    width: 50%;
+  }
+  section.carousel .carousel__content .container .carousel__text P:first-of-type {
+    font-size: 18px;
+  }
+  section.carousel .carousel__content .container .carousel__text h2:nth-of-type(1) {
+    font-size: 29px;
+  }
+  section.carousel .carousel__content .container .carousel__text p:nth-of-type(2) {
+    font-size: 12px;
+    padding: 0 0;
+  }
+  section.carousel .carousel__content .container .carousel__text .carousel__btn {
+    font-size: 14px;
+  }
+  section.carousel .carousel__content .container .carousel__item {
+    transform: translate(0px, -30px);
+    padding-right: 0;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__air {
+    font-size: 70px;
+    top: 42px;
+    left: 11px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle {
+    top: 142px;
+    left: 7px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__jordan {
+    font-size: 62px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__ring {
+    font-size: 30px;
+  }
+  section.carousel .carousel__line {
+    transform: rotate(-49deg);
+    height: 82px;
+    top: 181px;
+    left: -174px;
+  }
+  section.products {
+    padding: 0 0;
+  }
+  section.products .container .products__h2 {
+    color: black;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 40px 0;
+  }
+  section.products .slick-prev::before,
+  section.products .slick-next::before {
+    padding: 7px;
+    font-size: 20px;
+  }
+  section.products .slick-dots li button:before {
+    font-size: 12px;
+    top: 0;
+  }
+  section.create {
+    padding-top: 20px;
+  }
+  section.create .container {
+    padding: 50px 0;
+  }
+  section.create .container .create__text P:first-of-type {
+    font-size: 18px;
+  }
+  section.create .container .create__text h2:nth-of-type(1) {
+    font-size: 25px;
+  }
+  section.create .container .create__text p:nth-of-type(2) {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+  section.create .create__line {
+    width: 850px;
+    height: 102px;
+    top: -162px;
+    right: -570px;
+  }
+  section.trending .trending__right {
+    gap: 20px;
+    padding-left: 10px;
+  }
+  section.trending .trending__left {
+    padding-right: 10px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text {
+    bottom: 20px;
+    left: 20px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text P:first-of-type {
+    font-size: 15px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text h2:nth-of-type(1) {
+    font-size: 25px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text p:nth-of-type(2) {
+    font-weight: 400;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text .trending__btn {
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container__body {
+    max-width: 576px;
+  }
+  .container {
+    width: 500px;
+  }
+  section.carousel .carousel__img {
+    height: 370px;
+  }
+  section.carousel .carousel__content .container .carousel__text {
+    width: 50%;
+  }
+  section.carousel .carousel__content .container .carousel__text P:first-of-type {
+    font-size: 18px;
+  }
+  section.carousel .carousel__content .container .carousel__text h2:nth-of-type(1) {
+    font-size: 29px;
+  }
+  section.carousel .carousel__content .container .carousel__text p:nth-of-type(2) {
+    font-size: 12px;
+    padding: 0 0;
+  }
+  section.carousel .carousel__content .container .carousel__text .carousel__btn {
+    font-size: 14px;
+  }
+  section.carousel .carousel__content .container .carousel__item {
+    transform: translate(0px, -30px);
+    padding-right: 0;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__air {
+    font-size: 63px;
+    top: 34px;
+    left: 11px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle {
+    top: 121px;
+    left: 7px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__jordan {
+    font-size: 55px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__ring {
+    font-size: 28px;
+  }
+  section.carousel .carousel__line {
+    width: 1000px;
+    transform: rotate(-49deg);
+    height: 70px;
+    top: 181px;
+    left: -81px;
+  }
+  section.products {
+    padding: 0 0;
+  }
+  section.products .container .products__h2 {
+    color: black;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 40px 0;
+  }
+  section.products .slick-prev::before,
+  section.products .slick-next::before {
+    padding: 7px;
+    font-size: 20px;
+  }
+  section.products .slick-dots li button:before {
+    font-size: 12px;
+    top: 0;
+  }
+  section.create {
+    padding-top: 0px;
+  }
+  section.create .container {
+    padding: 20px 0;
+  }
+  section.create .container .create__text P:first-of-type {
+    font-size: 14px;
+  }
+  section.create .container .create__text h2:nth-of-type(1) {
+    font-size: 20px;
+  }
+  section.create .container .create__text p:nth-of-type(2) {
+    font-size: 12px;
+    padding: 0;
+  }
+  section.create .container .create__text .create__btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  section.create .create__line {
+    width: 800px;
+    height: 82px;
+    top: -178px;
+    right: -570px;
+  }
+  section.trending .trending__right {
+    gap: 20px;
+    padding-left: 10px;
+  }
+  section.trending .trending__left {
+    padding-right: 10px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text {
+    bottom: 20px;
+    left: 20px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text P:first-of-type {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text h2:nth-of-type(1) {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text p:nth-of-type(2) {
+    font-weight: 400;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text .trending__btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container__body {
+    max-width: 410px;
+  }
+  .container {
+    width: 390px;
+  }
+  section.carousel .carousel__img {
+    height: 267px;
+  }
+  section.carousel .carousel__content .container .carousel__text {
+    width: 45%;
+  }
+  section.carousel .carousel__content .container .carousel__text P:first-of-type {
+    font-size: 13px;
+    margin: 5px 0 0;
+  }
+  section.carousel .carousel__content .container .carousel__text h2:nth-of-type(1) {
+    font-size: 17px;
+  }
+  section.carousel .carousel__content .container .carousel__text p:nth-of-type(2) {
+    font-size: 9px;
+    padding: 0 0;
+  }
+  section.carousel .carousel__content .container .carousel__text .carousel__btn {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+  section.carousel .carousel__content .container .carousel__item {
+    width: 55%;
+    transform: translate(0px, -30px);
+    padding-right: 0;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__air {
+    font-size: 52px;
+    top: 34px;
+    left: 11px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle {
+    top: 103px;
+    left: 7px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__jordan {
+    font-size: 45px;
+  }
+  section.carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__textstyle .carousel__ring {
+    font-size: 20px;
+  }
+  section.carousel .carousel__line {
+    width: 1000px;
+    transform: rotate(-50deg);
+    height: 55px;
+    top: 110px;
+    left: -182px;
+  }
+  section.products {
+    padding: 0 0;
+  }
+  section.products .container .products__h2 {
+    color: black;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 40px 0;
+  }
+  section.products .slick-prev::before,
+  section.products .slick-next::before {
+    padding: 7px;
+    font-size: 20px;
+  }
+  section.products .slick-dots li button:before {
+    font-size: 12px;
+    top: 0;
+  }
+  section.trending .trending__h2 {
+    padding: 10px 0 !important;
+    font-size: 15px !important;
+  }
+  section.trending .trending__right {
+    gap: 10px;
+    padding-left: 5px;
+  }
+  section.trending .trending__left {
+    padding-right: 5px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text {
+    bottom: 20px;
+    left: 20px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text P:first-of-type {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text h2:nth-of-type(1) {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text p:nth-of-type(2) {
+    font-weight: 400;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  section.trending .trending__left .trending__longimg .trending__text .trending__btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  section.create {
+    padding-top: 0px;
+  }
+  section.create .container {
+    padding: 20px 0;
+  }
+  section.create .container .create__text P:first-of-type {
+    font-size: 14px;
+  }
+  section.create .container .create__text h2:nth-of-type(1) {
+    font-size: 20px;
+  }
+  section.create .container .create__text p:nth-of-type(2) {
+    font-size: 12px;
+    padding: 0;
+  }
+  section.create .container .create__text .create__btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  section.create .create__line {
+    width: 800px;
+    height: 82px;
+    top: -178px;
+    right: -570px;
+  }
+}
 .cart__btn {
   background: black;
   padding: 10px 20px;
-  border-radius: none;
-  border: none;
+  border-radius: unset;
+  border: unset;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.slick-next {
+  top: -40px;
+  right: 45px;
+}
+
+.slick-prev {
+  top: -40px;
+  right: 100px;
+  left: unset;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  background-color: #8c8585;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+  top: 50px;
+}
+
+.carousel__btn {
+  background: black;
+  padding: 10px 20px;
+  border-radius: unset;
+  border: unset;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.trending__btn {
+  background: black;
+  padding: 10px 20px;
+  border-radius: unset;
+  border: unset;
+  letter-spacing: 0.015rem;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border: solid 1px white;
+}
+
+.create__btn {
+  background: black;
+  padding: 10px 20px;
+  border-radius: unset;
+  border: unset;
   letter-spacing: 0.015rem;
   color: white;
   font-size: 18px;
@@ -111,7 +692,7 @@ header .navbar ul li .nav-link {
 .carousel .carousel__content .container .carousel__text h2:nth-of-type(1) {
   color: black;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .carousel .carousel__content .container .carousel__text p:nth-of-type(2) {
   color: black;
@@ -119,22 +700,14 @@ header .navbar ul li .nav-link {
   font-weight: 600;
   padding: 25px 0;
 }
-.carousel .carousel__content .container .carousel__text .carousel__btn {
-  background: black;
-  padding: 10px 20px;
-  border-radius: none;
-  border: none;
-  letter-spacing: 0.015rem;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-}
 .carousel .carousel__content .container .carousel__item {
   width: 50%;
-  transform: translate(60px, -80px);
+  transform: translate(0px, -80px);
+  padding-right: 145px;
 }
 .carousel .carousel__content .container .carousel__item .carousel__imgshoe img {
   position: relative;
+  width: 100%;
   z-index: 10;
 }
 .carousel .carousel__content .container .carousel__item .carousel__imgshoe .carousel__air {
@@ -167,14 +740,14 @@ header .navbar ul li .nav-link {
   font-style: italic;
 }
 .carousel .carousel__line {
-  height: 140px;
+  height: 160px;
   width: 1500px;
   background: rgb(255, 187, 0);
   background: linear-gradient(90deg, rgba(255, 187, 0, 0.751) 53%, rgba(230, 230, 230, 0.51) 53%);
   transform: rotate(-45deg);
   position: absolute;
-  top: 237px;
-  left: 582px;
+  top: 260px;
+  left: 475px;
   z-index: 0;
 }
 
@@ -184,18 +757,17 @@ header .navbar ul li .nav-link {
 .products .container .products__h2 {
   color: black;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 40px 0;
 }
-
-.products__item .row .col-4 .products__img {
+.products .container .products__item .row .col-4 .products__img {
   background-color: #e5e5e5;
   padding: 70px 50px 30px;
 }
-.products__item .row .col-4 .products__img img {
+.products .container .products__item .row .col-4 .products__img img {
   width: 100%;
 }
-.products__item .row .col-4 h3 {
+.products .container .products__item .row .col-4 h3 {
   color: black;
   font-size: 30px;
   font-weight: 600;
@@ -205,7 +777,7 @@ header .navbar ul li .nav-link {
 .trending .container .trending__h2 {
   color: black;
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 40px 0;
 }
 .trending .container .row {
@@ -215,20 +787,20 @@ header .navbar ul li .nav-link {
   padding: 0;
 }
 
-.trending__left {
+.trending__right {
   display: grid;
-  gap: 60px;
-  padding-left: 30px;
+  gap: 40px;
+  padding-left: 20px;
   height: 100%;
 }
-.trending__left .trending__shortimg {
+.trending__right .trending__shortimg {
   position: relative;
 }
-.trending__left .trending__shortimg img {
+.trending__right .trending__shortimg img {
   height: 100%;
   width: 100%;
 }
-.trending__left .trending__shortimg .overlay {
+.trending__right .trending__shortimg .overlay {
   background-color: rgba(16, 13, 13, 0.095);
   width: 100%;
   height: 100%;
@@ -237,50 +809,40 @@ header .navbar ul li .nav-link {
   left: 0;
 }
 
-.trending__right {
+.trending__left {
   height: 100%;
-  padding-right: 30px;
+  padding-right: 20px;
 }
-.trending__right .trending__longimg {
+.trending__left .trending__longimg {
+  height: 100%;
   position: relative;
 }
-.trending__right .trending__longimg img {
+.trending__left .trending__longimg img {
   width: 100%;
   height: 100%;
 }
-.trending__right .trending__longimg .trending__text {
+.trending__left .trending__longimg .trending__text {
   position: absolute;
   bottom: 85px;
   left: 70px;
 }
-.trending__right .trending__longimg .trending__text P:first-of-type {
+.trending__left .trending__longimg .trending__text P:first-of-type {
   color: white;
   font-size: 20px;
   font-weight: 400;
 }
-.trending__right .trending__longimg .trending__text h2:nth-of-type(1) {
+.trending__left .trending__longimg .trending__text h2:nth-of-type(1) {
   color: white;
   font-size: 45px;
   font-weight: 700;
 }
-.trending__right .trending__longimg .trending__text p:nth-of-type(2) {
+.trending__left .trending__longimg .trending__text p:nth-of-type(2) {
   color: white;
   font-size: 18px;
   font-weight: 600;
   padding: 25px 0;
 }
-.trending__right .trending__longimg .trending__text .trending__btn {
-  background: black;
-  padding: 10px 20px;
-  border-radius: none;
-  border: none;
-  letter-spacing: 0.015rem;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  border: solid 1px white;
-}
-.trending__right .trending__longimg .overlay {
+.trending__left .trending__longimg .overlay {
   background-color: rgba(16, 13, 13, 0.5);
   width: 100%;
   height: 100%;
@@ -290,6 +852,7 @@ header .navbar ul li .nav-link {
 }
 
 .create {
+  padding-top: 150px;
   position: relative;
 }
 .create .container {
@@ -317,16 +880,6 @@ header .navbar ul li .nav-link {
   font-weight: 600;
   padding: 25px 0;
 }
-.create .container .create__text .create__btn {
-  background: black;
-  padding: 10px 20px;
-  border-radius: none;
-  border: none;
-  letter-spacing: 0.015rem;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-}
 .create .container .create__imgshoe {
   width: 65%;
   z-index: 2;
@@ -340,7 +893,7 @@ header .navbar ul li .nav-link {
   background: rgb(255, 187, 0);
   transform: rotate(-45deg);
   position: absolute;
-  top: -115px;
+  top: 34px;
   right: -570px;
   z-index: 1;
 }
@@ -375,6 +928,9 @@ footer {
   border-radius: 50%;
   padding: 10px;
   background-color: white;
+}
+.footer__content .col-3 .footer__logo img {
+  width: 100%;
 }
 .footer__content .col-3:first-of-type {
   display: flex;
@@ -487,8 +1043,8 @@ input {
 .btnSign {
   background: black;
   padding: 10px 20px;
-  border-radius: none;
-  border: none;
+  border-radius: unset;
+  border: unset;
   letter-spacing: 0.015rem;
   color: white;
   font-size: 18px;
