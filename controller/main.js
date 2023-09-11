@@ -8,7 +8,6 @@
 
 var listProducts = new ListProducts();
 var apiSP = new ApiProduct();
-
 var quantity = 0;
 // lấy danh sách sản phẩm từ backend
 function layDanhSachSP() {
