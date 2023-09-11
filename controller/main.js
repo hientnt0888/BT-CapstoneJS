@@ -28,8 +28,8 @@ function hienThiSP(mang) {
                 </div>
                 <h3>${products.name}</h3>
                 <p>${products.price}$</p>
-                <button class= 'btn btn-warning'><a href="../view/cart.html" target="_blank" onclick= 'clickMore(${products.id})'>Add</a></button>
-                <button class= 'btn btn-primary'>More</button>
+                <button class= 'btn btn-warning' onclick= 'clickMore(${products.id})'>Add</button>
+                <button class= 'btn btn-primary'  onclick= 'sendID()'>More</button>
             </div>`
     });
     document.getElementById("displayProducts").innerHTML = content;
@@ -44,13 +44,14 @@ function clickMore(id) {
     //Kiểm tra có sp nào được click mua nhiều lần không nếu có thì không đẩy vào arrayProducts
 
     apiSP.apiDisplayProds(id).then(function (Response) {
+        console.log("🚀 ~ file: main.js:47 ~ Response:", Response)
         if (checkID == -1) {
             quantity++;
             listProducts.pushProducts(Response.data.content);
             setLocalStorage("DSSP", listProducts.arrayProducts);
             // window.open("../view/cart.html");
         } else {
-            quantity++;
+            alert("Sản phẩm được thêm thành công");
         }
         setLocalStorage("Quality", quantity)
         document.getElementById("spanMyCart").innerHTML = quantity;
@@ -73,3 +74,12 @@ function setLocalStorage(name, array) {
 //     }
 // }
 // getLocalStorage()
+
+//truyền id sản phẩm sang trang detail
+function sendID() {
+    // var Response = "hello"
+        var newWindow = window.open("../view/detail.html");
+        newWindow.window.postMessage("hello", "../view/detail.html");
+       
+}
+

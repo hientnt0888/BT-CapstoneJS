@@ -1107,4 +1107,23 @@ input {
   .container__footer {
     padding: 0 20px;
   }
+}
+.trending-detail {
+  background-color: rgba(140, 133, 133, 0.285);
+}
+
+.footerdetail .footerdetail__img {
+  position: relative;
+}
+.footerdetail .footerdetail__img .footer__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(140, 133, 133, 0.767);
+}
+.footerdetail .footerdetail__img img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

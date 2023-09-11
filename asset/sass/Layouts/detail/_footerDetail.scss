@@ -1,0 +1,22 @@
+.trending-detail{
+    background-color: rgba(140, 133, 133, 0.285);
+}
+
+.footerdetail{
+    .footerdetail__img{
+        position: relative;
+        .footer__overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(140, 133, 133, 0.767);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

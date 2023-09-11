@@ -2,8 +2,8 @@ function getLocalStorage() {
     if (localStorage.getItem("DSSP") != null) {
         var array = JSON.parse(localStorage.getItem("DSSP"));
         console.log("🚀 ~ file: MainCart.js:6 ~ getLocalStorage ~ array:", array)
-        var quality = JSON.parse(localStorage.getItem("Quality"))
-        document.getElementById("spanMyCart").innerHTML = quality;
+        var quantity = JSON.parse(localStorage.getItem("quantity"))
+        document.getElementById("spanMyCart").innerHTML = quantity;
         myCart(array);
     }
 }
