@@ -67,13 +67,5 @@ function setLocalStorage(name, array) {
     localStorage.setItem(name, JSON.stringify(array));
 }
 
-//get local storage
-// function getLocalStorage() {
-//     if (localStorage.getItem("DSSP") != null) {
-//         listProducts.arrayProducts = JSON.parse(localStorage.getItem("DSSP"));
-//         // myCart(listProducts.arrayProducts);
-//     }
-// }
-// getLocalStorage()
 
 
