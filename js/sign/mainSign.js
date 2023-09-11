@@ -1,68 +1,84 @@
-// sign 
-var dsa = new DanhSachAccount();
+// // sign in
 var validation = new Validation();
-function queryELE(query) {
-    return document.querySelector(query);
-}
-function setLocalStorage() {
-    localStorage.setItem("DSA", JSON.stringify(dsa.mangAccount));
-}
-function getLocalStorage() {
-    if (localStorage.getItem("DSA") != null) {
-        dsa.mangAccount = JSON.parse(localStorage.getItem("DSA"));
-    }
-
-}
-
-getLocalStorage();
-
 function themAccount() {
-    var userName = queryELE("#userName").value;
-    var email = queryELE("#email").value;
-    var phone = queryELE("#phone").value;
-    var pass = queryELE("#password").value;
-   
+    var name = document.querySelector("#userName").value;
+    var email = document.querySelector("#email").value;
+    var phone = document.querySelector("#phone").value;
+    var password = document.querySelector("#password").value;
+    var gioiTinh = document.querySelector("#gioiTinh").value;
 
+    var gender = kiemTraGioiTinh(gioiTinh);
     var isValid = true;
-
-
-    // userName
-    isValid &= validation.checkEmpty(userName, "Username không được để trống", "tbNameUp") && validation.checkUserName(userName, "Username không được trùng", "tbNameUp",dsa.mangAccount); 
-
-    // email 
-    isValid &= validation.checkEmpty(email, "Email không được để trống", "tbEmailUp") && validation.checkEmail(email,"Email không hợp lệ","tbEmailUp"); 
-    // phone 
-    isValid &= validation.checkEmpty(phone, "Phone không được để trống", "tbPhoneUp") && validation.checkPhone(phone,"Phone không hợp lệ","tbPhoneUp"); 
-    // pass
-    isValid &= validation.checkEmpty(pass, "Password không được để trống", "tbPasswordUp") && validation.checkPass(pass,"Password không hợp lệ","tbPasswordUp");
-
-    console.log(isValid)
-
+    isValid &= validation.checkEmpty(email, "Tài Khoản không được để trống", "tbEmailUp") && validation.checkEmail(email, "Email không đúng định dạng", "tbEmailUp")
+    isValid &= validation.checkEmpty(password, "Mật khẩu không được để trống", "tbPasswordUp") && validation.checkMatKhau(password, "Mật khẩu từ 6-10 ký tự chứa ít nhất 1 ký tự số, 1 ký tự in hoa", "tbPasswordUp");
+    isValid &= validation.checkEmpty(name, "Họ tên không được để trống", "tbNameUp") && validation.checkHoTen(name, "Họ tên không hợp lệ", "tbNameUp");
+    isValid &= validation.checkEmpty(phone, "Số điện thoại không được để trống", "tbPhoneUp") && validation.checkSDT(phone, "Số điện thoại không hợp lệ ", "tbPhoneUp");
     if (isValid) {
-        var account = new Account(userName, email, phone,pass);
-        
-        dsa.themAccount(account);
-      
-        setLocalStorage();
-        queryELE("#logIn").click();
+        var user = new User(email, password, name, gender, phone);
+        console.log(user)
+        var promiseObj = axios({
+            method: 'post',
+            url: 'https://shop.cyberlearn.vn/api/Users/signup',
+            data: user
+        });
+        promiseObj.then(function (result) {
+            console.log(result);
+            alert(result.data.message)
+            // if (result) { window.location.href = "../view/dangnhap.html"; }
+
+        }).catch(function (error) {
+            console.log(error);
+            alert(error.response.data.message)
+        });
 
     }
 
-   
+
 }
-queryELE("#btnSignUp").onclick = themAccount;
+document.querySelector("#btnSignUp").onclick = themAccount;
 
-function dangNhap() {
-    var userName1 = queryELE("#userName1").value;
-    var pass1 = queryELE("#password1").value;
+function kiemTraGioiTinh(gioiTinh) {
+    var check = null
+    if (gioiTinh == "Nam" || gioiTinh == "Nữ") {
+        check = true ;
+    } else if (gioiTinh == "") {
+        // alert("Chọn giới tính")
+    }
+    else {
+        check = false ;
 
+    }
+    return check
+}
+
+//Login
+function setlocal(message, content) {
+    localStorage.setItem(message, JSON.stringify(content))
+}
+function loginIn() {
+    var email = document.getElementById("userName1").value;
+    var password = document.getElementById("password1").value;
     var isValid = true;
-    isValid &= validation.checkEmpty(userName1, "Username không được để trống", "tbNameIn")&& validation.checkUserName1(userName1, "Tài khoản chưa được đăng ký", "tbNameIn",dsa.mangAccount);
-
-    isValid &= validation.checkEmpty(pass1, "Password không được để trống", "tbPasswordIn")&& validation.checkPass1(pass1, "Password không đúng", "btnSignIn",dsa.mangAccount);
-
-
-
-
+    isValid &= validation.checkEmpty(email, "Tài Khoản không được để trống", "tbNameIn");
+    isValid &= validation.checkEmpty(password, "Mật khẩu không được để trống", "tbPasswordIn") && validation.checkMatKhau(password, "Mật khẩu từ 6-10 ký tự chứa ít nhất 1 ký tự số, 1 ký tự in hoa", "tbPasswordIn");
+    if (isValid) {
+        var userLog = new User(email, password);
+        var promiseObj = axios({
+            method: 'post',
+            url: 'https://shop.cyberlearn.vn/api/Users/signin',
+            data: userLog
+        });
+        promiseObj.then(function (result) {
+            console.log(result);
+            alert(result.data.message);
+            if (result) {
+                window.location.href = "../index.html",
+                    setlocal("user", result)
+            }
+        }).catch(function (error) {
+            console.log(error);
+            alert(error.response.data.message)
+        });
+    }
 }
-queryELE("#btnSignIn").onclick = dangNhap;
+document.getElementById("btnSignIn").onclick = loginIn;

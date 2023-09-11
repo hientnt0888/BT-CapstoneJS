@@ -25,47 +25,53 @@
 </head>
 
 <body class="body__sign">
-    <div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
 
-			<div class="signup">
-                <label for="chk" aria-hidden="true">Sign up</label>
-				<form class="formSignUp">
-                    <div class="form-group">
-                    
-                    <input id="userName" type="text" placeholder="Username" >
+        <div class="signup">
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <form class="formSignUp">
+                <div class="form-group">
+
+                    <input id="userName" type="text" placeholder="Username">
                     <span id="tbNameUp" class="text-danger"></span>
-                    </div>
-					<div class="form-group">
-                    <input id="email" type="email" placeholder="Email" >
+                </div>
+                <div class="form-group">
+                    <input id="email" type="email" placeholder="Email">
                     <span id="tbEmailUp" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                    <input id="phone" type="text"  placeholder="Phone" >
+                </div>
+                <div class="form-group">
+                    <input id="phone" type="text" placeholder="Phone">
                     <span id="tbPhoneUp" class="text-danger"></span>
-                    </div>
-					<div class="form-group">
-                    <input id="password" type="password" placeholder="Password" >
-                    <span id="tbPasswordUp" class="text-danger"></span></div>
-                    
-					
-					<button type="button" class="btnSign" id="btnSignUp">Sign up</button>
-				</form>
-			</div>
+                </div>
+                <div class="form-group">
+                    <input id="password" type="password" placeholder="Password">
+                    <span id="tbPasswordUp" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input id="gioiTinh" type="text" placeholder="Giới tính">
+                    <span id="tbPasswordUp" class="text-danger"></span>
+                </div>
 
-			<div class="login">
-				<form>
-					<label id="logIn" for="chk" aria-hidden="true">Login</label>
-                    <input id="userName1" type="text" placeholder="Username" >
-                    <span id="tbNameIn" class="text-danger"></span>
-					<!-- <input type="email" name="email" placeholder="Email" >
+
+                <button type="button" class="btnSign" id="btnSignUp">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <label id="logIn" for="chk" aria-hidden="true">Login</label>
+                <input id="userName1" type="text" placeholder="Username">
+                <span id="tbNameIn" class="text-danger"></span>
+                <!-- <input type="email" name="email" placeholder="Email" >
                     <span id="tbEmailIn" class="text-danger"></span> -->
-					<input id="password1" type="password"  placeholder="Password" >
-                    <span id="tbPasswordIn" class="text-danger"></span>
-					<button type="button" class="btnSign" id="btnSignIn">Login</button>
-				</form>
-			</div>
-	</div>
+                <input id="password1" type="password" placeholder="Password">
+
+                <span id="tbPasswordIn" class="text-danger"></span>
+                <button type="button" class="btnSign" id="btnSignIn">Login</button>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -85,15 +91,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-    <script src="../controller/sign/Account.js"></script>
-    <script src="../controller/sign/DanhSachAccount.js"></script>
-    <script src="../controller/sign/Validation.js"></script>
-    <script src="../controller/sign/mainSign.js"></script>
-   
+    <script src="../js/sign/Account.js"></script>
+    <script src="../js/sign/User.js"></script>
+    <script src="../js/sign/Validation.js"></script>
+    <script src="../js/sign/mainSign.js"></script>
 
 
-   
+
+
 
 
 
