@@ -70,7 +70,6 @@ function loginIn() {
         });
         promiseObj.then(function (result) {
             console.log(result);
-            alert(result.data.message);
             if (result) {
                 window.location.href = "../index.html",
                     setlocal("user", result)
