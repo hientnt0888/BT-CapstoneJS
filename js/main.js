@@ -8,12 +8,15 @@
 
 var listProducts = new ListProducts();
 var apiSP = new ApiProduct();
-var quantity = 0;
+
 // lấy danh sách sản phẩm từ backend
 function layDanhSachSP() {
     apiSP.apiProducts.then(function (Response) {
         hienThiSP(Response.data.content);
     });
+    // setLocalStorage("DSSP", listProducts.arrayProducts);
+    // setLocalStorage("Quality", quantity)
+    // getLocalStorage()
 }
 layDanhSachSP()
 
@@ -51,8 +54,8 @@ function clickMore(id) {
         });
 
         var content = `
-             <div>
-                <img src=${product.image} alt='img' style='width: 100%;'>
+             <div style = "text-align: center">
+                <img src=${product.image} alt='img' style='width: 70%;'>
             </div>
             <div>
                  <p>'${product.description}'</p>
@@ -71,39 +74,93 @@ function clickMore(id) {
 }
 
 //Khi click add thì thêm sản phẩm vào arrayProducts và lưu xuống localstorage
-function clickAdd(id) {
-    var checkID = listProducts.arrayProducts.findIndex(function (sp) {
-        return id == sp.id;
-    })
+// function clickAdd(id) {
+//     var checkID = listProducts.arrayProducts.findIndex(function (sp) {
+//         return id == sp.id;
+//     })
 
-    //Kiểm tra có sp nào được click mua nhiều lần không nếu có thì không đẩy vào arrayProducts
+//     //Kiểm tra có sp nào được click mua nhiều lần không nếu có thì không đẩy vào arrayProducts
+//     var checkUser = document.getElementById("spanUser").textContent;
+//     apiSP.apiDisplayProds(id).then(function (Response) {
+//         console.log("🚀 ~ file: main.js:83 ~ Response:", Response)
+//         if (checkUser != "Login") {
+//             if (checkID == -1) {
+//                 listProducts.pushProducts(Response.data.content);
+               
+//                 // window.open("../view/cart.html")
+//                 quantity++;
+//                 alert("Sản phẩm được thêm thành công")
+//             } else {
+//                 // quantity++;
+//                 alert("Sản phẩm được thêm thành công")
+//             }
+//         } else{
+//             alert("Vui lòng Đăng Nhập")
+//         }
+//         setLocalStorage("DSSP", listProducts.arrayProducts);
+//         setLocalStorage("Quality", quantity)
+    
+//         document.getElementById("spanMyCart").innerHTML = quantity;
+
+//     });
+// }
+function clickAdd(id) {
+    var existingData = localStorage.getItem("DSSP");
+    console.log("🚀 ~ file: main.js:109 ~ clickAdd ~ existingData:", existingData)
+    var existingArray = existingData ? JSON.parse(existingData) : [];
+    var quantity = existingArray.length;
+    console.log("🚀 ~ file: main.js:112 ~ clickAdd ~ quantity:", quantity)
+    // Tìm sản phẩm trong danh sách hiện có (nếu có)
+    var existingProduct = existingArray.find(function (sp) {
+        return id == sp.id;
+    });
+
     var checkUser = document.getElementById("spanUser").textContent;
     apiSP.apiDisplayProds(id).then(function (Response) {
+        console.log("🚀 ~ file: main.js:83 ~ Response:", Response);
         if (checkUser != "Login") {
-            if (checkID == -1) {
-                listProducts.pushProducts(Response.data.content);
-                setLocalStorage("DSSP", listProducts.arrayProducts);
-                // window.open("../view/cart.html")
-                quantity++;
-                alert("Sản phẩm được thêm thành công")
-            } else {
-                quantity++;
-                alert("Sản phẩm được thêm thành công")
+            if (!existingProduct) {
+                // Thêm sản phẩm vào danh sách nếu không tồn tại
+                existingArray.push(Response.data.content);
             }
-        } else{
-            alert("Vui lòng Đăng Nhập")
+            // Tăng số lượng sản phẩm
+            // quantity++;
+            alert("Sản phẩm được thêm thành công");
+        } else {
+            alert("Vui lòng Đăng Nhập");
         }
 
-        setLocalStorage("Quality", quantity)
-        document.getElementById("spanMyCart").innerHTML = quantity;
+        // Lưu danh sách và số lượng sản phẩm vào localStorage
+        localStorage.setItem("DSSP", JSON.stringify(existingArray));
+        localStorage.setItem("Quality", quantity);
+
+        document.getElementById("spanMyCart").innerHTML = quality;
 
     });
 }
 
+// Load danh sách từ localStorage khi trang được tải lại
+var existingData = localStorage.getItem("DSSP");
+if (existingData) {
+    var existingArray = JSON.parse(existingData);
+    // Sử dụng danh sách này để hiển thị số lượng sản phẩm trong giỏ hàng khi trang được tải lại
+    document.getElementById("spanMyCart").innerHTML = existingArray.length;
+}
+
+
 //set LoalStorage
 function setLocalStorage(name, array) {
-    localStorage.setItem(name, JSON.stringify(array));
+   return localStorage.setItem(name, JSON.stringify(array));
 }
+// get LocalStorage
+// function getLocalStorage() {
+//     if (localStorage.getItem("DSSP") != null) {
+//         var array = JSON.parse(localStorage.getItem("DSSP"));
+//         var quality = JSON.parse(localStorage.getItem("Quality"))
+//         document.getElementById("spanMyCart").innerHTML = quality;
+//     }
+// }
+// getLocalStorage();  
 
 //Hiển thị username
 function userName() {
