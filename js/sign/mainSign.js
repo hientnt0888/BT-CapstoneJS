@@ -5,7 +5,7 @@ function themAccount() {
     var email = document.querySelector("#email").value;
     var phone = document.querySelector("#phone").value;
     var password = document.querySelector("#password").value;
-    var gioiTinh = document.querySelector("#gioiTinh").value;
+    var gioiTinh = document.getElementsByName("gender");
 
     var gender = kiemTraGioiTinh(gioiTinh);
     var isValid = true;
@@ -31,6 +31,8 @@ function themAccount() {
             alert(error.response.data.message)
         });
 
+       
+
     }
 
 
@@ -39,11 +41,11 @@ document.querySelector("#btnSignUp").onclick = themAccount;
 
 function kiemTraGioiTinh(gioiTinh) {
     var check = null
-    if (gioiTinh == "Nam" || gioiTinh == "Nữ") {
+    if (gioiTinh[0].checked) {
         check = true ;
-    } else if (gioiTinh == "") {
-        // alert("Chọn giới tính")
-    }
+    } 
+    // else if (gioiTinh == "") {
+    // }
     else {
         check = false ;
 
