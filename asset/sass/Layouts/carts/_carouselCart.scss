@@ -44,3 +44,12 @@
         padding: 0 20px;
     }
 }
+
+
+.modal-backdrop{
+    z-index: 1;
+}
+.modal-content{
+    border: 2px solid rgba(0,0,0,.4);
+    box-shadow: 10px 0px 10px 10px rgba(99, 95, 81, 0.664);
+}

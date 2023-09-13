@@ -44,13 +44,25 @@
                     <input id="phone" type="text" placeholder="Phone">
                     <span id="tbPhoneUp" class="text-danger"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group" >
                     <input id="password" type="password" placeholder="Password">
-                    <span id="tbPasswordUp" class="text-danger"></span>
+                    <span                       id="tbPasswordUp" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <input id="gioiTinh" type="text" placeholder="Giới tính">
-                    <span id="tbPasswordUp" class="text-danger"></span>
+                <div class="form-group gender">
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Male
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label" >
+                          <input type="radio" class="form-check-input" name="optradio">Female
+                        </label>
+                      </div>
+                    
+                    <!-- <input id="gioiTinh" type="text" placeholder="Giới tính"> -->
+                   
+                    <span id="tbGender" class="text-danger"></span>
                 </div>
 
 
@@ -63,8 +75,6 @@
                 <label id="logIn" for="chk" aria-hidden="true">Login</label>
                 <input id="userName1" type="text" placeholder="Username">
                 <span id="tbNameIn" class="text-danger"></span>
-                <!-- <input type="email" name="email" placeholder="Email" >
-                    <span id="tbEmailIn" class="text-danger"></span> -->
                 <input id="password1" type="password" placeholder="Password">
 
                 <span id="tbPasswordIn" class="text-danger"></span>
@@ -72,6 +82,7 @@
             </form>
         </div>
     </div>
+
 
 
 
