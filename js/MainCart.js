@@ -14,13 +14,13 @@ function myCart(array) {
     array.map(function (sp, index) {
         content += `
         <tr>
-            <td>${sp.id}</td>
-            <td><img src="${sp.image}" alt="img products"></td>
-            <td>${sp.name}</td>
-            <td><btn  class= 'btn btn-primary'>-</btn> <span>1</span> <btn  class= 'btn btn-primary'>+</btn></td>
-            <td>${sp.price} $</td>
-            <td></td>
-            <td><btn class= 'btn btn-primary'>Buy</btn></td>
+            <td class="id">${sp.id}</td>
+            <td class="img"><img src="${sp.image}" alt="img products"></td>
+            <td class="name">${sp.name}</td>
+            <td class="quty"><btn  class= 'btn btn-primary soLuong' >-</btn> <span>1</span> <btn  class= 'btn btn-primary soLuong' >+</btn></td>
+            <td class="price">${sp.price} $</td>
+            <td class="total"></td>
+            <td class="action"><btn class= 'btn btn-primary soLuong' >Buy</btn></td>
         </tr>`
     })
     document.getElementById("tableCart").innerHTML = content;
