@@ -38,16 +38,17 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">MAN <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#sectionProducts" onclick="filterProducts('nike')">NIKE <span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">WOMAN</a>
+                                <a class="nav-link" href="#sectionProducts" onclick="filterProducts('adidas')" >ADIDAS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">KIDS</a>
+                                <a class="nav-link" href="#sectionProducts" onclick="filterProducts('converse')" >CONVERSE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">COLLECTIONS</a>
+                                <a class="nav-link" href="#sectionProducts" onclick="filterProducts('van')" >VAN</a>
                             </li>
 
                         </ul>
@@ -66,7 +67,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./view/cart.html" >MY CART
+                                <a class="nav-link" href="./view/cart.html">MY CART
                                     (<span id="spanMyCart"></span>)</a>
                             </li>
                         </ul>
@@ -90,7 +91,7 @@
                         <p>The Jordan 6 Rings Men's Shoe celebrates a legendary career with classic design
                             lines
                             and detailing for streamlined hoops style</p>
-                        <button class="carousel__btn">Go to collection</button>
+                        <button class="carousel__btn"><a href="#sectionProducts">Go to collection</a></button>
                     </div>
                     <div class="carousel__item">
                         <div class="carousel__imgshoe">
@@ -106,43 +107,12 @@
             </div>
             <div class="carousel__line"></div>
         </section>
-        <section class="products">
+        <section class="products" id="sectionProducts">
             <div class="container">
                 <h2 class="products__h2">Top Picks</h2>
                 <div class="products__item">
                     <div class="row" id="displayProducts"> <!--multiple-items-->
-                        <!-- <div class="col-4">
-                            <div class="products__img  toppick">
-                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
-                            </div>
-                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
-                            <p class="priceshoe">price</p>
-                            <button class="show-details"></button>
-                        </div>
-                        <div class="col-4">
-                            <div class="products__img  toppick">
-                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
-                            </div>
-                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
-                            <p class="priceshoe">price</p>
-                            <button class="show-details"></button>
-                        </div>
-                        <div class="col-4">
-                            <div class="products__img toppick">
-                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
-                            </div>
-                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
-                            <p class="priceshoe">price</p>
-                            <button class="show-details"></button>
-                        </div>
-                        <div class="col-4">
-                            <div class="products__img toppick">
-                                <img src="./asset/img/img19_preview_rev_1.png" alt="img products">
-                            </div>
-                            <h3 class="nameshoe">Kyrie 5 x Friends</h3>
-                            <p class="priceshoe">price</p>
-                            <button class="show-details"></button>
-                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -161,7 +131,7 @@
                                     <p>New form nike sportswear</p>
                                     <h2>REACT PRESTO</h2>
                                     <P>With React foam for the most comfortable Presto ever</P>
-                                    <button class="trending__btn">Shop</button>
+                                    <button class="trending__btn"><a href="#sectionProducts">Shop</a></button>
                                 </div>
                             </div>
                         </div>
@@ -268,19 +238,19 @@
                         </button>
                     </div>
                     <div class="modal-body" id="chiTietSp">
-                      </div>
-                      <div class="modal-footer" id="btnPopUp">
-                    
-                      </div>
+                    </div>
+                    <div class="modal-footer" id="btnPopUp">
+
+                    </div>
                 </div>
             </div>
-        </section>
+            </section>
 
 
 
 
-          
-        <!-- <section class="popup">
+
+            <!-- <section class="popup">
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-scrollable">
@@ -321,40 +291,41 @@
     </div>
 
     <!-- jquery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
+            <!-- bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+                integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+                crossorigin="anonymous"></script>
 
-    <!-- slick -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.multiple-items').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                // autoplay: true,
-                autoplaySpeed: 2000,
-            });
-        });
-    </script>
+            <!-- slick -->
+            <script type="text/javascript"
+                src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.multiple-items').slick({
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        // autoplay: true,
+                        autoplaySpeed: 2000,
+                    });
+                });
+            </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="/model/feature/mangsanpham.js"></script>
-    <script src="./model/feature/callapi.js"></script>
-    <script src="./js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+            <script src="/model/feature/mangsanpham.js"></script>
+            <script src="./model/feature/callapi.js"></script>
+            <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -593,6 +593,9 @@ body, html {
   font-size: 18px;
   font-weight: 400;
 }
+.carousel__btn a {
+  color: white;
+}
 
 .trending__btn {
   background: black;
@@ -604,6 +607,9 @@ body, html {
   font-size: 18px;
   font-weight: 400;
   border: solid 1px white;
+}
+.trending__btn a {
+  color: white;
 }
 
 .create__btn {

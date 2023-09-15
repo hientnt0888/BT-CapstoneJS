@@ -26,12 +26,18 @@
 
 //btn carousel
 .carousel__btn {
+    a{
+        color: white
+    }
     @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
     @include styleText($color-white, $fs-1, $fw-1);
 }
 
 //btn trending
 .trending__btn {
+    a{
+        color: white
+    }
     @include styleBTN($color-black, $pd-1 - 5, $pd-1 + 5, $rds, $bd, $ls-1);
     @include styleText($color-white, $fs-1, $fw-1);
     border: solid 1px white;
