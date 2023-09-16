@@ -68,7 +68,7 @@
     </header>
 
     <div class="container__body">
-        <div class="carousel py-4">
+        <div class="carousel cart py-4">
             
                 <!-- <div id="thongbao" class="alert alert-danger d-none face" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -79,16 +79,16 @@
                 <h1 class="text-center py-4 carousel__cart">My cart</h1>
                 <div class="row">
                     <div class="col col-md-12">
-                        <table class="table table-bordered">
+                        <table class="table">
                             <thead>
                                 <tr class="heading__table">
-                                    <th>ID</th>
-                                    <th>Img</th>
-                                    <th>Name</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th>Total</th>
-                                    <th>Action</th>
+                                    <th class="id">ID</th>
+                                    <th class="img">Img</th>
+                                    <th class="name">Name</th>
+                                    <th class="quty">Quantity</th>
+                                    <th class="price">Price</th>
+                                    <th class="total">Total</th>
+                                    <th class="action">Action</th>
                                 </tr>
                             </thead>
                             <tbody id="tableCart">
@@ -97,11 +97,17 @@
                            
                         </table>
 
-                        <button class="cart__btn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp;Submit order</button>
+                        
                         <!-- <a href="#" class="btn btn-primary btn-md create__btn">
                             <i
                                 class="fa fa-shopping-cart" aria-hidden="true"></i>
                                 &nbsp;SUBMIT ORDER</a> -->
+                    <div class="footer_cart">
+                        <a href="../index.html" class="continueShopping"><span><i class="fa-solid fa-arrow-left"></i></span> Continue shopping</a>
+                        <button class="cart__btn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp;Submit order</button>
+
+                    </div>
+                       
                     </div>
                 </div>
            
@@ -115,7 +121,7 @@
             <div class="container container__footer">
                 <div class="row footer__content">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5"><div class="footer__logo">
-                        <img src="../asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
+                        <img class="img_footer" src="../asset/img/Screenshot 2023-09-02 000533.png" alt="logo">
                     </div></div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6   mt-sm-0 mt-5">
                         <ul class="navbar-nav-cart">

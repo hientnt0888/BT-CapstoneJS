@@ -1128,11 +1128,27 @@ input {
     padding: 0 20px;
   }
 }
-.modal-backdrop {
-  z-index: 1;
+.table {
+  border: 0px;
+  border-bottom: 1px solid;
+}
+.table .heading__table {
+  color: white;
+  background-color: black;
+}
+.footer_cart {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_cart .continueShopping {
+  color: black;
+  padding: 35px 0 0 50px;
+}
+.footer_cart .cart__btn {
+  margin-right: 50px;
 }
 
-.modal-content {
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  box-shadow: 10px 0px 10px 10px rgba(99, 95, 81, 0.664);
+.soLuong {
+  background-color: black;
+  border: black;
 }/*# sourceMappingURL=style.css.map */
